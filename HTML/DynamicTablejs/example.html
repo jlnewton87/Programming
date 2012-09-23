@@ -1,0 +1,117 @@
+<script>
+	function addRow(){
+	var currentTable=document.getElementById("table").innerHTML();
+	var newTable;
+	
+	var list = document.getElementById("projectNumber");
+	var projectNumber = list.options[list.selectedIndex].text;
+	newTable += currentTable;
+	newtable += "<tr><td>" + projectNumber + "</td></tr>";
+	alert("Selected Project Number" + projectNumber);
+	document.getElementById("table").innerHTML=newTable;
+}
+function addRowToTable()
+{
+  var tbl = document.getElementById('tblSample');
+  var lastRow = tbl.rows.length;
+  var projectNumber, date, hours;
+  var list = document.getElementById("projectNumber");
+  projectNumber = list.options[list.selectedIndex].text;
+  date = document.getElementById('dateForHours').value;
+  hours = document.getElementById('hours').value;
+  
+  // if there's no header row in the table, then iteration = lastRow + 1
+  var iteration = lastRow;
+  var row = tbl.insertRow(lastRow);
+  
+  // Number cell
+  var cellNumber = row.insertCell(0);
+  var textNode = document.createTextNode(iteration);
+  cellNumber.appendChild(textNode);
+  
+  //Project Number Cell
+  var cellProjectNumber = row.insertCell(1);
+  var textNode2 = document.createTextNode(projectNumber);
+  cellProjectNumber.appendChild(textNode2);
+  
+  
+  // right cell
+  var cellDate = row.insertCell(2);
+  var el = document.createTextNode(date)
+  cellDate.appendChild(el);  
+  
+  //
+  var cellHours = row.insertCell(3);
+  var textNode3 = document.createTextNode(hours);
+  cellHours.appendChild(textNode3);
+ }
+
+function removeRowFromTable()
+{
+  var tbl = document.getElementById('tblSample');
+  var lastRow = tbl.rows.length;
+  if (lastRow > 2) tbl.deleteRow(lastRow - 1);
+}
+</script>
+<form>
+
+<style>
+table
+{ 
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+<p style="text-align: center">
+Project Number &nbsp;<select id="projectNumber">
+	<option value="2012-100">2012-100</option>
+	<option value="2012-101">2012-101</option>
+	<option value="2012-102">2012-102</option>
+	<option value="2012-103">2012-103</option>
+	<option value="2012-104">2012-104</option>
+	<option value="2012-105">2012-105</option>
+	<option value="2012-106">2012-106</option>
+	<option value="2012-107">2012-107</option>
+	<option value="2012-108">2012-108</option>
+	<option value="2012-109">2012-109</option>
+	<option value="2012-110">2012-110</option>
+	<option value="2012-111">2012-111</option>
+	<option value="2012-112">2012-112</option>
+	<option value="2012-113">2012-113</option>
+	<option value="2012-114">2012-114</option>
+	<option value="2012-115">2012-115</option>
+	<option value="2012-116">2012-116</option>
+	<option value="2012-117">2012-117</option>
+	<option value="2012-118">2012-118</option>
+	<option value="2012-119">2012-119</option>
+	<option value="2012-120">2012-120</option>
+</select>
+Date <input type="date" id="dateForHours">
+Hours (1-8 whole numbers only) <input type="number" id="hours" min="1" max="8"></p>
+<p style="text-align: center">
+<input type="button" value="Add" onclick="addRowToTable();" />
+
+<input type="button" value="Remove" onclick="removeRowFromTable();" />
+
+</p>
+</form>
+<table border="1" id="tblSample" style="text-align: center" width="660px">
+
+<tr>
+
+<th colspan="4">Time Sheet</th>
+
+</tr>
+<tr>
+	<td><b>Entry</b></td>
+	<td><b>Project Number</b></td>
+	<td><b>Date</b></td>
+	<td><b>Number of hours</b></td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>2012-106</td>
+	<td>2012-10-04</td>
+	<td>5</td>
+</tr>
+</table>
