@@ -26,7 +26,6 @@ namespace MyComputer
          //Get version information about the os.
          Version vs = os.Version;
 
-         //Variable to hold our return value
          string operatingSystem = "";
 
          if (os.Platform == PlatformID.Win32Windows)
