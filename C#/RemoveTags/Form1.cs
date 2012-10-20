@@ -32,7 +32,7 @@ namespace RemoveTags
       {
          string[] allFiles = Directory.GetFiles(this.targetDirectory);
          List<string> listAllFiles = allFiles.ToList();
-         DialogResult result = MessageBox.Show("Are you sure you want to remove tags from " + listAllFiles.Count + "Files?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+         DialogResult result = MessageBox.Show("Are you sure you want to remove tags from " + listAllFiles.Count + " Files?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
          if (result == DialogResult.Yes)
          {
 
