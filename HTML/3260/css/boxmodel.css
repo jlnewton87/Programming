@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bigbox {
+	width:200px;
+	height:200px;
+	background-color:#CFC;
+	border:dashed;
+	padding:5px;	
+}
+.smallbox {
+	width:100px;
+	height:100px;
+	background-color:#FF6666;
+	border:ridge;
+	padding:5px;
+	margin:10px;
+}
