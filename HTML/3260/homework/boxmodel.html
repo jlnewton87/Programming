@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CSS Box Model</title>
-<link rel="stylesheet" type="text/css" href="../css/boxmodel.css" />
+<link href="../css/boxmodel.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -13,5 +13,16 @@
     <div class="smallbox">
     	This is a small box
     </div>
+    <div class="bigbox">
+    	This is a big box that contains a small box
+        <div class="smallbox">
+        	This is a small box inside the big box
+        </div>
+    </div>
+    <h1>Relative Positioning</h1>
+    <div id="myrelative">
+    	<p>This paragraph is indented 30px from the left relatively positioned</p>
+    </div>
+    
 </body>
 </html>
