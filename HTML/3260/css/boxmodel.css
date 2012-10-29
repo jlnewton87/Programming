@@ -26,3 +26,20 @@ h1 {
 	padding:5px;
 	color:#000033;
 }
+#myabsolute {
+	position:absolute;
+	left:400px;
+	top:400px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:300px;
+}
+h2 {
+	background-color:#CCCC33;
+	color:#000000;
+	padding:5px;
+}
+.myfloat {
+	float:right;
+	margin:0 0 5px 5px;
+	border:solid;
+}
