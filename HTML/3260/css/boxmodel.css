@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bigbox {
+	width:200px;
+	height:200px;
+	background-color:#CFC;
+	border:dashed;
+	padding:5px;	
+}
+.smallbox {
+	width:100px;
+	height:100px;
+	background-color:#FF6666;
+	border:ridge;
+	padding:5px;
+	margin:10px;
+}
+#myrelative {
+	position:relative;
+	left:30px;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+h1 {
+	background-color:#33FF66;
+	padding:5px;
+	color:#000033;
+}
+#myabsolute {
+	position:absolute;
+	left:400px;
+	top:400px;
+	font-family:Verdana, Geneva, sans-serif;
+	width:300px;
+}
+h2 {
+	background-color:#CCCC33;
+	color:#000000;
+	padding:5px;
+}
+.myfloat {
+	float:right;
+	margin:0 0 5px 5px;
+	border:solid;
+}
