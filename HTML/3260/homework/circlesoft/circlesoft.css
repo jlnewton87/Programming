@@ -1,0 +1,51 @@
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	color:black;
+	background-color:white;
+}
+.logo {
+	background-color:#121252;
+	color:#66CCFF;
+}
+.nav {
+	background-color:#66CCFF;
+	color:#121252;
+	text-decoration:none;
+	padding:5px;
+	font-size:18px;
+	width:100px;
+}
+a.nav:link {
+	color:#121252;	
+}
+a.nav:visited {
+	color:black;	
+}
+a.nav:hover {
+	border:white solid 1px;	
+}
+.headings {
+	color:#66CCFF;
+	background-color:white;
+	font-family:Verdana;
+	padding:10px;
+	line-height:200%;
+}
+.content {
+	font-family:Arial;
+	padding:.5em;
+	line-height:2em;
+	position:relative;
+	left:20px;
+}
+.footer {
+	text-align:center;
+	font-size:8px;
+	font-style:italic;
+}
+ul {
+	list-style-image:url(circlesoftbullet.gif);
+}
