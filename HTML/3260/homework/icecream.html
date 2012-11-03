@@ -5,16 +5,82 @@
 <title>Bullseye Icecream</title>
 <style type="text/css">
 
-
+	body {
+		background-color:#99CCFF;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	table {
+		width:960px;
+		/*To center the table without using the depricated "align="center"" attribute*/
+		margin-left:auto;
+		margin-right:auto;
+	}
+	img {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	td.main {
+		width:50%;
+	}
+	a {
+		text-decoration:none;
+		color:black;
+		background-color:#00CC00;
+		border:2px outset #009900;
+		width:100px;
+		padding:3px 15px;
+		font-weight:bold;
+		text-align:center;
+	}
+	a:link {
+		color:#FFFFFF;	
+		width:50px;
+	}
+	a:visited {
+		color:black;	
+	}
+	a:hover {
+		border:2px inset #009900;;	
+	}
+	
 </style>
 </head>
 <body>
 
-	<table>
+	<table cellspacing="10px" cellpadding="10px">
 		
-		<tr>
+		<tr colspan="2">
+			<img src="icecreamlogo.png" alt="Bullseye logo" title="Bullseye Logo" />
 		</tr>
 		<tr>
+			<td class="main">
+				<ul>
+					<li>Vanilla
+					<li>Chocolate
+					<li>Mint chocolate chip
+					<li>Peach
+					<li>Peanut Butter and Jelly
+				</ul>
+			</td>
+			<td class="main">
+				<p>Peanut butter and jelly is a house favorite. Peanut butter flavored ice cream is mixed with the best grape jam
+				to create a flavor that everyone will love.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="main">
+				<p>8000 Chastain Road, Kennesaw, GA 30144</p>
+				<p>Hours:</p>
+				<p>Weekdays: 9AM - 9PM <br />
+				   Saturdays: 9AM - 11PM <br />
+				   Sundays: 12PM-7PM</p>
+			</td>
+			<td class="main">
+				<p>Some of our best competitors for your money: </p>
+				<a href="http://www.brusters.com/">Brusters</a>
+				<a href="http://www.coldstonecreamery.com/">Cold Stone</a>
+			</td>
 		</tr>
 		
 	</table>
