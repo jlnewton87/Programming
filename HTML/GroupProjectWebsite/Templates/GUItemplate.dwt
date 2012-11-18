@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>American Legion Post 45 | Home</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../site.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<table width="200" border="1" id="pageContent" align="center" cellspacing="20px">
+  <tr>
+    <td colspan="4">
+    	<img src="../flag_banner.jpg" width="451" height="141" alt="Flag Banner" id="banner"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+<ul id="leftNav">
+        	<li><a href="./index.html">Home</a></li>
+            <li><a href="./pics.html">Photo Gallery</a></li>
+            <li><a href="./newsletter.html">Newsletter</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </td>
+    <td id="contentHeader"><!-- TemplateBeginEditable name="ContentHeader" -->Home<!-- TemplateEndEditable --></td>
+    <td>Calendar</td>
+  </tr>
+    <tr>
+    <td id="otherLinks">OtherLinks</td>
+    <td id="content"><!-- TemplateBeginEditable name="Content" -->Content<!-- TemplateEndEditable --></td>
+    <td>Whatever</td>
+  </tr>
+  <tr>
+    <td colspan="4" id="footer">Footer</td>
+  </tr>
+</table>
+	
+</body>
+</html>
