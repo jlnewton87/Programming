@@ -20,4 +20,12 @@ public class Patient {
 		long difference = appointmentTime.getTime() - checkinTime.getTime();
 		this.effectiveTime.setTime(appointmentTime.getTime() - difference);
 	}
+	
+	
+	public void loadTestData()
+	{
+		Patient a = new Patient("Josh", "Newton", new Date(Date.UTC(2012, 12, 8, 8, 0, 0)), appointmentTime);
+		
+		
+	}
 }
