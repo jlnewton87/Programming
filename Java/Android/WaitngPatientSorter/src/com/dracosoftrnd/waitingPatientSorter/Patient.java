@@ -11,12 +11,13 @@ public class Patient {
 	public Date effectiveTime;
 	
 	
-	public Patient(String fName, String lName, Date appointmentTime, Date checkinTime, Date effectiveTime)
+	public Patient(String fName, String lName, Date appointmentTime, Date checkinTime)
 	{
 		this.firstName = fName;
 		this.lastName = lName;
 		this.appointmentTime = appointmentTime;
 		this.checkinTime = checkinTime;
-		this.effectiveTime = effectiveTime;
+		long difference = appointmentTime.getTime() - checkinTime.getTime();
+		this.effectiveTime.setTime(appointmentTime.getTime() - difference);
 	}
 }
