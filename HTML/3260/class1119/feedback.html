@@ -78,7 +78,129 @@ html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
   </tr>
   <tr>
     <td bgcolor="#C96203">&nbsp;</td>
-    <td bgcolor="#F1BE6F">&nbsp;</td>
+    <td bgcolor="#F1BE6F">
+        <form id="form1" name="form1" method="post" action="">
+       	  <table width="90%" border="0" cellpadding="5px">
+                  <tr>
+                    <td colspan="2"><div align="center"><strong><h1>Music Survey</h1></strong></div></td>
+                  </tr>
+                  <tr>
+                    <td><h3>Enter Full Name</h3></td>
+                    <td><h3>
+                      <label for="Name: "></label>
+                      <input name="Name: " type="text" id="Name: " size="50" maxlength="50" />
+                    </h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3>Email Address</h3></td>
+                    <td><h3>
+                      <label for="Email:  "></label>
+                      <input name="Email:  " type="text" id="Email:  " size="50" maxlength="50" />
+                    </h3></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><h3>Select Music Genre</h3></td>
+                    <td><table width="200">
+                      <tr>
+                        <td><label>
+                          <input type="checkbox" name="pop" value="Pop" id="musictype_0" />
+                          Pop</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>
+                          <input type="checkbox" name="rock" value="Rock" id="musictype_1" />
+                          Rock</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>
+                          <input type="checkbox" name="country" value="Country" id="musictype_2" />
+                          Country</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>
+                          <input type="checkbox" name="jazz" value="Jazz" id="musictype_3" />
+                          Jazz</label></td>
+                      </tr>
+                      <tr>
+                        <td><label>
+                          <input type="checkbox" name="classical" value="Classical" id="musictype_4" />
+                          Classical</label></td>
+                      </tr>
+                    </table> 
+                    <label for="checkbox"></label></td>
+              </tr>
+                  <tr>
+                    <td><h3>&nbsp;</h3></td>
+                    <td><h3>&nbsp;</h3></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><h3>How Often do you Purchase Music?</h3></td>
+                    <td><h3>
+                      <label for="textfield"></label>
+                    </h3>
+                      <p>
+                        <label>
+                          <input type="radio" name="purchaseMusic" value="none" id="purchaseMusic_0" />
+                          None</label>
+                        <br />
+                        <label>
+                          <input type="radio" name="purchaseMusic" value="daily" id="purchaseMusic_1" />
+                          Daily</label>
+                        <br />
+                        <label>
+                          <input type="radio" name="purchaseMusic" value="weekly" id="purchaseMusic_2" />
+                          Weekly</label>
+                        <br />
+                        <label>
+                          <input type="radio" name="purchaseMusic" value="monthly" id="purchaseMusic_3" />
+                          Monthly</label>
+                        <br />
+                        <label>
+                          <input type="radio" name="purchaseMusic" value="yearly" id="purchaseMusic_4" />
+                          Yearly</label>
+                        <br />
+                      </p>
+                    <h3>&nbsp; </h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3>&nbsp;</h3></td>
+                    <td><h3>&nbsp;</h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3>Where do you listen to music?</h3></td>
+                    <td><h3>
+                      <label for="listen_music"></label>
+                      <select name="listen_music" size="3" multiple="multiple" id="listen_music">
+                        <option value="shower">Shower</option>
+                        <option value="In Class">In Class</option>
+                        <option value="Car">Car</option>
+                        <option value="Work">Work</option>
+                        <option value="Gym">Gym</option>
+                        <option value="Running">Running</option>
+                      </select>
+                    </h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3>&nbsp;</h3></td>
+                    <td><h3>&nbsp;</h3></td>
+                  </tr>
+                  <tr>
+                    <td><h3>How does music enrich your life?</h3></td>
+                    <td><h3>
+                      <label for="lifeEnrich"></label>
+                      <textarea name="lifeEnrich" id="lifeEnrich" cols="50" rows="10"></textarea>
+                    </h3></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><div align="center">
+                      <input type="submit" name="submit" id="submit" value="Submit" />
+                      <input name="reset" type="reset" id="reset" value="Clear" />
+                    </div></td>
+                  </tr>
+          </table>
+
+        </form>
+    </td>
   </tr>
   <tr>
     <td width="236" bgcolor="#C96203">&nbsp;</td>
