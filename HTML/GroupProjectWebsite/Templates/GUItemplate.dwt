@@ -13,7 +13,7 @@
 <body>
 <table width="200" border="1" id="pageContent" align="center" cellspacing="20px">
   <tr>
-    <td colspan="4"><img src="../flag_banner3_final.jpg" width="960" height="204" alt="Banner" /></td>
+    <td colspan="4"><img src="../flag_banner3_final.jpg" width="100%" height="224" alt="Banner" /></td>
   </tr>
   <tr>
     <td width="20%">
