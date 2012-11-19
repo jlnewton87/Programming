@@ -4,11 +4,13 @@ import java.util.*;
 
 public class PatientList {
 	
-	public ArrayList<Patient> patients;
+	public static ArrayList<Patient> patients;
 	
-	public void addPatient(Patient newPatient)
+	public static void addPatient(Patient newPatient)
 	{
 		patients.add(newPatient);
 	}
+	
+	
 
 }
