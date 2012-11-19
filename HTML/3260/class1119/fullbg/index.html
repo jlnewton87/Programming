@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Full Size Background Image jQuery Plugin - Demo | bavotasan.com</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullbg.min.js"></script>
+<style type="text/css">
+.fullBg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#maincontent {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	background: #fff;
+	opacity: 0.9; 
+	filter: alpha(opacity=90);
+	}
+
+#box {
+	width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	}
+	
+h1 { 
+	margin-top: 12px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 44px;
+	font-weight: normal;
+	font-family: Georgia,serif;
+	color: #222;
+	}
+	
+h2 { 
+	margin-top: 0;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: normal;
+	font-family: Georgia,serif;
+	color: #C52D08;
+	}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #C52D08;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+		}
+</style>
+</head>
+
+<body>
+<img src="images/bg.jpg" alt="" id="background" />
+<div id="maincontent">
+    <div id="box">
+        <h1>Full Size Background Image jQuery Plugin</h1>
+        <h2>Demo</h2>
+        Just resize this window and you will see the plugin in action. Whenever the window size changes, the background image size changes. AND it always stays in the proper aspect ratio.
+	    <p><a href="http://bavotasan.com/?p=1748">&laquo; back to tutorial</a></p>
+    </div>
+</div>
+<script type="text/javascript">
+$(window).load(function() {
+	$("#background").fullBg();
+});
+</script>
+</body>
+</html>

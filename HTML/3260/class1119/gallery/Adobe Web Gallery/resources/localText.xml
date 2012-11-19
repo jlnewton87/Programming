@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<localization>
+	<galleryMenus>
+		<menuitem label="View" event="MenuView">
+			<menuitem label="Gallery" type="radio" event="MenuViewGallery"/>
+			<menuitem label="Slideshow" type="radio" event="MenuViewSlideshow"/>
+			<menuitem label="Separator" event="Separator"/>
+			<menuitem label="About this Gallery" type="radio" event="MenuViewAbout"/>		
+		</menuitem>
+	<!--	
+		<menuitem label="Connection" event="MenuConnection">
+			<menuitem label="Broadband" type="radio" event="MenuConnectionBroadband"/>
+			<menuitem label="Dialup" type="radio" event="MenuConnectionDialup"/>
+		</menuitem>
+	-->
+	</galleryMenus>
+	<toolTips>
+		<toolTip label="Next Image" item="SlideshowVCRNextTip"/>
+		<toolTip label="Previous Image" item="SlideshowVCRPrevTip"/>
+		<toolTip label="Play Slideshow" item="SlideshowVCRPlayTip"/>
+		<toolTip label="Pause Slideshow" item="SlideshowVCRPauseTip"/>
+		<toolTip label="View Gallery" item="SlideshowViewGalleryTip"/>
+		<toolTip label="View Slideshow" item="SlideshowViewSlideshowTip"/>
+		<toolTip label="Add Comment" item="SlideshowOpenCommentTip"/>
+		<toolTip label="Mark as Favorite" item="SlideshowMarkFavoriteTip"/>
+		<toolTip label="Next Page" item="ThumbnailNextPageTip"/>
+		<toolTip label="Previous Page" item="ThumbnailPrevPageTip"/>
+		<toolTip label="Last Page" item="ThumbnailLastPageTip"/>
+		<toolTip label="First Page" item="ThumbnailFirstPageTip"/>
+		<toolTip label="Play Video" item="SlideshowVideoPlayTip"/>
+		<toolTip label="Pause Video" item="SlideshowVideoPauseTip"/>
+		<toolTip label="Rewind Video" item="SlideshowVideoRewindTip"/>
+	</toolTips>
+</localization>
