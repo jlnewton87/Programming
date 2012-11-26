@@ -46,7 +46,18 @@
             <li><a class="link5" href="history.html">History</a></li>
           </ul>
         </div>
-        <div id="secondaryNav"></div>
+        <div id="secondaryNav">
+        	<h4>Other Links</h4>
+        	<ul>
+                <li><a href="http://www.usa-flag-site.org/etiquette-display.shtml">Flag Protocol</a></li>
+                <li><a href="http://www.usa-flag-site.org/etiquette.shtml">Flag Etiquette</a></li>
+                <li><a href="http://www.pow-miafamilies.org/League/History_of_the_POW_MIA_Flag.html">POW Flag History</a></li>
+                <li><a href="http://www.virtualwall.org/index.html">Vietnam Virtual Wall</a></li>
+                <li><a href="http://vetjobs.com/index.php">VetJobs</a></li>
+                <li><a href="http://emblem.legion.org/">American Legion Emblems & flags</a></li>
+                <li><a href="http://www.theveteranssite.com/clickToGive/home.faces?siteId=10">Veterans Website</a></li>
+            </ul>
+        </div>
         <!-- Column 2 end -->
       </div>
       <div class="col3">

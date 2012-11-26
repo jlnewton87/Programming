@@ -23,18 +23,6 @@ body
 {
 	background-color:#CFDFF0;
 }
-/*#leftNav li
-{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-}
-#leftNav a
-{
-	display:block;
-	width:60px;
-	background-color:#dddddd;
-}*/
 #calendar {
 	margin-top:10px;	
 }
@@ -81,7 +69,7 @@ body
 	width:120px;
 }
 
-*/.linkSelected
+.linkSelected
 {
 	-moz-border-radius: 6px;
 	border:outset #FF1919 3px;
@@ -145,4 +133,7 @@ body
 .threecol .col3 {
 	width:21%;
 	left:85%;			
+}
+#secondaryNav h4{
+	text-align:center;
 }
