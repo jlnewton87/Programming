@@ -9,10 +9,10 @@
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
     	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/gxjs.js"></script>
-	<script type="text/javascript" src="js/GX.js"></script>
-	<script type="text/javascript" src="js/GX.transitions.js"></script>
-	<script type="text/javascript" src="js/GX.extras.js"></script>
+	<script type="text/javascript" src="../js/gxjs.js"></script>
+	<script type="text/javascript" src="../js/GX.js"></script>
+	<script type="text/javascript" src="../js/GX.transitions.js"></script>
+	<script type="text/javascript" src="../js/GX.extras.js"></script>
 </head>
 <body>
 
@@ -20,44 +20,47 @@
 	<img src="../flag_banner3_final.jpg" id="banner"></img>
 </div>
 <div class="colmask threecol">
-	<div class="colmid">
-		<div class="colleft">
-			<div class="col1">
-				<!-- Column 1 start -->
-                <div id="content">
-                	<h2>Title</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu nunc, rutrum vitae pretium eu, auctor ut ipsum. Aenean eu elit in orci cursus sollicitudin et eget nisl. Pellentesque tristique ornare nunc, et sagittis tortor ultrices in. Mauris elit mauris, pellentesque at pharetra ut, lobortis eu augue. Pellentesque dapibus rutrum libero a auctor. Cras ornare diam id mi hendrerit mollis. Suspendisse molestie pulvinar posuere. Aliquam erat volutpat. Aliquam quis sem eros, vel vehicula sem. Suspendisse ut odio id ante rhoncus hendrerit. Cras porttitor, nisl ut vulputate euismod, arcu mi tristique tortor, sit amet facilisis massa velit vitae magna. Integer eget dolor ligula, non facilisis odio. Nunc non nisi in est facilisis auctor porta at justo.
-                    </p>
-                </div>
-				<!-- Column 1 end -->
-			</div>
-			<div class="col2">
-				<!-- Column 2 start -->
-                <div id="mainNav">
-                    <ul id="leftNav">
-                        <li><a class="link1" href="./index.html">Home</a></li>
-                        <li><a class="link1" href="./pics.html">Photo Gallery</a></li>
-                        <li><a class="link1" href="./newsletter.html">Newsletter</a></li>
-                        <li><a class="link1" href="./events.html">Events</a></li>
-                        <li><a class="link1" href="history.html">History</a></li>
-                    </ul>
-                </div>
-                <div id="secondaryNav">
-					
-                </div>
-				<!-- Column 2 end -->
-			</div>
-			<div class="col3">
-				<!-- Column 3 start -->
-                <div id="calendar">
-                	<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=teamgui01%40gmail.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="250" height="300" frameborder="0" scrolling="no"></iframe>
-                </div>
-				<!-- Column 3 end -->
-			</div>
-		</div>
-	</div>
+  <div class="colmid">
+    <div class="colleft">
+      <div class="col1">
+        <!-- Column 1 start -->
+        <div id="content">
+    <!-- TemplateBeginEditable name="contentTitle" -->
+		<h2>Title</h2>
+    <!-- TemplateEndEditable -->
+	<!-- TemplateBeginEditable name="contentText" -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu nunc, rutrum vitae pretium eu, auctor ut ipsum. Aenean eu elit in orci cursus sollicitudin et eget nisl. Pellentesque tristique ornare nunc, et sagittis tortor ultrices in. Mauris elit mauris, pellentesque at pharetra ut, lobortis eu augue. Pellentesque dapibus rutrum libero a auctor. Cras ornare diam id mi hendrerit mollis. Suspendisse molestie pulvinar posuere. Aliquam erat volutpat. Aliquam quis sem eros, vel vehicula sem. Suspendisse ut odio id ante rhoncus hendrerit. Cras porttitor, nisl ut vulputate euismod, arcu mi tristique tortor, sit amet facilisis massa velit vitae magna. Integer eget dolor ligula, non facilisis odio. Nunc non nisi in est facilisis auctor porta at justo. </p>
+    <!-- TemplateEndEditable -->
+          
+        </div>
+        <!-- Column 1 end -->
+      </div>
+      <div class="col2">
+        <!-- Column 2 start -->
+        <div id="mainNav">
+          <ul id="leftNav">
+            <li><a class="link1" href="./index.html">Home</a></li>
+            <li><a class="link2" href="./pics.html">Photo Gallery</a></li>
+            <li><a class="link3" href="./newsletter.html">Newsletter</a></li>
+            <li><a class="link4" href="./events.html">Events</a></li>
+            <li><a class="link5" href="history.html">History</a></li>
+          </ul>
+        </div>
+        <div id="secondaryNav"></div>
+        <!-- Column 2 end -->
+      </div>
+      <div class="col3">
+        <!-- Column 3 start -->
+        <div id="calendar">
+          <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=teamgui01%40gmail.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style=" border:solid 1px #777 " width="280" height="300" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <!-- Column 3 end -->
+      </div>
+    </div>
+  </div>
 </div>
 <div id="footer">
+	<span>Team GUI&copy; | Last Updated: Nov, 24</span>
 </div>
 
 </body>
