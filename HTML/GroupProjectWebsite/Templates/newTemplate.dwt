@@ -39,24 +39,13 @@
         <!-- Column 2 start -->
         <div id="mainNav">
           <ul id="leftNav">
-            <li><a class="link1" href="./index.html">Home</a></li>
-            <li><a class="link2" href="./pics.html">Photo Galley</a></li>
-            <li><a class="link3" href="./newsletter.html">Newsletter</a></li>
-            <li><a class="link4" href="./events.html">Events</a></li>
+            <li><a class="link1" href="index.html">Home</a></li>
+            <li><a class="link2" href="pics.html">Photo Galley</a></li>
+            <li><a class="link3" href="newsletter.html">Newsletter</a></li>
+            <li><a class="link4" href="events.html">Events</a></li>
             <li><a class="link5" href="history.html">History</a></li>
+            <li><a class="link6" href="otherlinks.html">Other Links</a></li>
           </ul>
-        </div>
-        <div id="secondaryNav">
-        	<h4>Other Links</h4>
-        	<ul>
-                <li><a href="http://www.usa-flag-site.org/etiquette-display.shtml">Flag Protocol</a></li>
-                <li><a href="http://www.usa-flag-site.org/etiquette.shtml">Flag Etiquette</a></li>
-                <li><a href="http://www.pow-miafamilies.org/League/History_of_the_POW_MIA_Flag.html">POW Flag History</a></li>
-                <li><a href="http://www.virtualwall.org/index.html">Vietnam Virtual Wall</a></li>
-                <li><a href="http://vetjobs.com/index.php">VetJobs</a></li>
-                <li><a href="http://emblem.legion.org/">American Legion Emblems & flags</a></li>
-                <li><a href="http://www.theveteranssite.com/clickToGive/home.faces?siteId=10">Veterans Website</a></li>
-            </ul>
         </div>
         <!-- Column 2 end -->
       </div>

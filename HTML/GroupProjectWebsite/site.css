@@ -59,6 +59,8 @@ body
 }
 #leftNav a:link,a:visited
 {
+	border-radius:6px;
+	-webkit-border-radius:6px;
 	-moz-border-radius: 6px;
 	border:outset #FF1919 3px;
 	display: block;
@@ -72,6 +74,8 @@ body
 
 .linkSelected
 {
+	border-radius:6px;
+	-webkit-border-radius:6px;
 	-moz-border-radius: 6px;
 	border:outset #FF1919 3px;
 	display: block;
