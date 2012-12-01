@@ -2,7 +2,7 @@ package com.dracosoftrnd.waitingPatientSorter;
 
 import org.joda.time.*;
 
-public class Patient {
+public class Patient implements Comparable<Patient>{
 	
 	public String name;
 	public LocalTime appointmentTime;
@@ -19,4 +19,10 @@ public class Patient {
 		this.differenceInMinutes = Integer.parseInt(Minutes.minutesBetween(appointment, checkin).toString().replace("PT", "").replace("M", ""));
 		this.effectiveTime = appointment.plusMinutes(differenceInMinutes);
 	}
+
+
+	public int compareTo(Patient p) {
+		   return effectiveTime.compareTo(p.effectiveTime);  // compare by date
+    }
+	
 }

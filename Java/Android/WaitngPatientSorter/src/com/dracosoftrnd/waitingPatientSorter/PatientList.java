@@ -1,20 +1,13 @@
 package com.dracosoftrnd.waitingPatientSorter;
 
 import java.util.*;
-
 import org.joda.time.*;
 
 public class PatientList {
 	
-	public static ArrayList<Patient> patients;
-	
-	public static void addPatient(Patient newPatient)
+	public static ArrayList<Patient> loadTestData()
 	{
-		patients.add(newPatient);
-	}
-	
-	public void loadTestData()
-	{
+		ArrayList<Patient> patients = new ArrayList<Patient>();
 		Patient a = new Patient("Josh Newton", new LocalTime(13, 30), new LocalTime(13, 39));
 		Patient b = new Patient("John Doe", new LocalTime(14, 00), new LocalTime(13, 58));
 		Patient c = new Patient("Jane Doe", new LocalTime(14, 30), new LocalTime(13, 25));
@@ -29,5 +22,7 @@ public class PatientList {
 		patients.add(e);
 		patients.add(f);
 		patients.add(g);
+		Collections.sort(patients);
+		return patients;
 	}
 }
