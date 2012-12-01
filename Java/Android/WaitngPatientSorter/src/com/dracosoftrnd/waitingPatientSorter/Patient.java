@@ -1,31 +1,22 @@
 package com.dracosoftrnd.waitingPatientSorter;
 
-import java.util.Date;
+import org.joda.time.*;
 
 public class Patient {
 	
-	public String firstName;
-	public String lastName;
-	public Date appointmentTime;
-	public Date checkinTime;
-	public Date effectiveTime;
+	public String name;
+	public LocalTime appointmentTime;
+	public LocalTime checkinTime;
+	public LocalTime effectiveTime;
+	public int differenceInMinutes;
 	
 	
-	public Patient(String fName, String lName, Date appointmentTime, Date checkinTime)
+	public Patient(String name, LocalTime appointment, LocalTime checkin)
 	{
-		this.firstName = fName;
-		this.lastName = lName;
-		this.appointmentTime = appointmentTime;
-		this.checkinTime = checkinTime;
-		long difference = appointmentTime.getTime() - checkinTime.getTime();
-		this.effectiveTime.setTime(appointmentTime.getTime() - difference);
-	}
-	
-	
-	public void loadTestData()
-	{
-		Patient a = new Patient("Josh", "Newton", new Date(Date.UTC(2012, 12, 8, 8, 0, 0)), appointmentTime);
-		
-		
+		this.name = name;
+		this.appointmentTime = appointment;
+		this.checkinTime = checkin;
+		this.differenceInMinutes = Integer.parseInt(Minutes.minutesBetween(appointment, checkin).toString().replace("PT", "").replace("M", ""));
+		this.effectiveTime = appointment.plusMinutes(differenceInMinutes);
 	}
 }
