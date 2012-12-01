@@ -40,7 +40,7 @@
         <div id="mainNav">
           <ul id="leftNav">
             <li><a class="link1" href="index.html">Home</a></li>
-            <li><a class="link2" href="pics.html">Photo Galley</a></li>
+            <li><a class="link2" href="membershipeligibility.html">Membership</a></li>
             <li><a class="link3" href="newsletter.html">Newsletter</a></li>
             <li><a class="link4" href="events.html">Events</a></li>
             <li><a class="link5" href="history.html">History</a></li>
@@ -60,7 +60,7 @@
   </div>
 </div>
 <div id="footer">
-	<span>Team GUI&copy; | Last Updated: Nov, 24</span>
+	<span>Team GUI&copy; | Last Updated: Nov, 24 | <a href="sitemap.html">Sitemap</a> | <a href="credits.html">Credits</a> | </span>
 </div>
 
 </body>
