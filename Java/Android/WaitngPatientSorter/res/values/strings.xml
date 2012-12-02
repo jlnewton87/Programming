@@ -4,5 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_patient_list">Waiting Patient Sorter</string>
+    <string name="title_activity_add_patient">AddPatientActivity</string>
 
 </resources>
