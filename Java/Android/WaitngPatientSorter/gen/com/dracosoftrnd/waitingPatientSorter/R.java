@@ -16,14 +16,17 @@ public final class R {
         public static final int onTime=0x7f060001;
     }
     public static final class drawable {
-        public static final int ic_action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int circle_green=0x7f020000;
+        public static final int circle_red=0x7f020001;
+        public static final int circle_yellow=0x7f020002;
+        public static final int ic_action_search=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
     }
     public static final class id {
-        public static final int effectiveTime=0x7f080002;
+        public static final int effectiveTime=0x7f080001;
+        public static final int image1=0x7f080002;
         public static final int menu_settings=0x7f080003;
-        public static final int patientName=0x7f080001;
-        public static final int row_bg=0x7f080000;
+        public static final int patientName=0x7f080000;
     }
     public static final class layout {
         public static final int list_row=0x7f030000;

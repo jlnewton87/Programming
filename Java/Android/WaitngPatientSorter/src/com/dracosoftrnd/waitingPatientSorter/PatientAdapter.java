@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -49,7 +50,7 @@ public class PatientAdapter extends BaseAdapter{
 	 
 	        TextView title = (TextView)vi.findViewById(R.id.patientName); // Name
 	        TextView time = (TextView)vi.findViewById(R.id.effectiveTime); //Effective Time
-	        LinearLayout row = (LinearLayout)vi.findViewById(R.id.row_bg);
+	        ImageView image = (ImageView)vi.findViewById(R.id.image1);
 	        
 	        Patient patient = patients.get(position);
 	 
@@ -58,15 +59,15 @@ public class PatientAdapter extends BaseAdapter{
 	        time.setText(patient.effectiveTime.toString());
 	        if(patient.differenceInMinutes == 0)
 	        {
-	        	vi.setBackgroundColor(Color.YELLOW);
+	        	image.setImageResource(R.drawable.circle_yellow);
 	        }
 	        else if(patient.differenceInMinutes > 0)
 	        {
-	        	vi.setBackgroundColor(Color.RED);
+	        	image.setImageResource(R.drawable.circle_red);
 	        }
 	        else if(patient.differenceInMinutes < 0)
 	        {
-	        	vi.setBackgroundColor(Color.GREEN);
+	        	image.setImageResource(R.drawable.circle_green);
 	        }
 	        return vi;
 	}
