@@ -1,0 +1,85 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <EditText
+            android:id="@+id/txtName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:hint="Patient Name"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+<TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText1"
+            android:text="Appointment Time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TimePicker
+    android:id="@+id/timeAppointment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/textView1"/>
+
+<TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/timePicker1"
+            android:text="Check-In Time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TimePicker
+    android:id="@+id/timeCheckin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/textView2"/>
+
+<CheckBox
+    android:id="@+id/chkNow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/timePicker2"
+    android:text="Check patient in now?" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/scrollView1"
+            android:layout_marginLeft="97dp"
+            android:layout_marginTop="20dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Cancel" />
+
+    </RelativeLayout>
