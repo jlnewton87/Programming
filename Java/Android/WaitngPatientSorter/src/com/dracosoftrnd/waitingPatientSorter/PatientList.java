@@ -1,14 +1,14 @@
 package com.dracosoftrnd.waitingPatientSorter;
 
 import java.util.*;
-import org.joda.time.*;
+import org.joda.time.LocalTime;
 
 public class PatientList {
 	
 	public static ArrayList<Patient> loadTestData()
 	{
 		ArrayList<Patient> patients = new ArrayList<Patient>();
-		Patient a = new Patient("Josh Newton", new LocalTime(13, 30), new LocalTime(13, 39));
+		Patient a = new Patient("Joshua Newton", new LocalTime(13, 30), new LocalTime(13, 39));
 		Patient b = new Patient("John Doe", new LocalTime(14, 00), new LocalTime(13, 58));
 		Patient c = new Patient("Jane Doe", new LocalTime(14, 30), new LocalTime(13, 25));
 		Patient d = new Patient("Eric Clapton", new LocalTime(15, 00), new LocalTime(15, 05));

@@ -25,4 +25,14 @@ public class Patient implements Comparable<Patient>{
 		   return effectiveTime.compareTo(p.effectiveTime);  // compare by date
     }
 	
+	@Override
+	public String toString()
+	{
+		String patientString = "";
+		patientString += this.name;
+		
+		return patientString;
+		
+	}
+	
 }

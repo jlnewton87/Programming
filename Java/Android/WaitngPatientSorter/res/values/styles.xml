@@ -1,5 +1,8 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
+    <color name="late">#FF1919</color>
+    <color name="onTime">#FFCC00</color>
+    <color name="early">#19D119</color>
 
 </resources>
