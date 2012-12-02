@@ -56,7 +56,7 @@ public class PatientAdapter extends BaseAdapter{
 	 
 	        // Setting all values in listview
 	        title.setText(patient.name);
-	        time.setText(patient.effectiveTime.toString().replace(":00.000", ""));
+	        time.setText(patient.effectiveTime.toString().replace(":00.000", "")); //removes seconds/milliseconds from time
 	        if(patient.differenceInMinutes == 0)
 	        {
 	        	image.setImageResource(R.drawable.circle_yellow);
