@@ -13,15 +13,17 @@ import android.widget.ListView;
 
 public class PatientListActivity extends Activity {
 
+	public static ArrayList<Patient> Patients;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_list);
         
-        ArrayList<Patient> patients = PatientList.loadTestData();
+        PatientListActivity.Patients = PatientList.loadTestData();
         ListView patientList = (ListView) findViewById(android.R.id.list);
         PatientAdapter adapter = new PatientAdapter(this,
-        		  patients);
+        		  Patients);
         
         patientList.setAdapter(adapter);
         

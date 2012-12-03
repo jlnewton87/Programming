@@ -49,14 +49,14 @@ public class PatientAdapter extends BaseAdapter{
 	            vi = inflater.inflate(R.layout.list_row, null);
 	 
 	        TextView title = (TextView)vi.findViewById(R.id.patientName); // Name
-	        TextView time = (TextView)vi.findViewById(R.id.effectiveTime); //Effective Time
+	        TextView time = (TextView)vi.findViewById(R.id.effectiveTime); // Effective Time
 	        ImageView image = (ImageView)vi.findViewById(R.id.image1);
 	        
 	        Patient patient = patients.get(position);
 	 
 	        // Setting all values in listview
 	        title.setText(patient.name);
-	        time.setText(patient.effectiveTime.toString().replace(":00.000", "")); //removes seconds/milliseconds from time
+	        time.setText(patient.effectiveTime.toString().replace(":00.000", "")); // Removes seconds/milliseconds from time
 	        if(patient.differenceInMinutes == 0)
 	        {
 	        	image.setImageResource(R.drawable.circle_yellow);
