@@ -23,13 +23,15 @@ public final class R {
         public static final int ic_launcher=0x7f020004;
     }
     public static final class id {
-        public static final int add_patient=0x7f08000c;
+        public static final int add_patient=0x7f08000e;
         public static final int btnAdd=0x7f080007;
         public static final int btnCancel=0x7f080006;
         public static final int effectiveTime=0x7f080009;
         public static final int image1=0x7f08000a;
+        public static final int load_testData=0x7f08000d;
         public static final int menu_settings=0x7f08000b;
         public static final int patientName=0x7f080008;
+        public static final int remove_patient=0x7f08000c;
         public static final int scrollView1=0x7f080000;
         public static final int textView1=0x7f080002;
         public static final int textView2=0x7f080004;
@@ -45,7 +47,8 @@ public final class R {
     }
     public static final class menu {
         public static final int activity_add_patient=0x7f070000;
-        public static final int patient_list=0x7f070001;
+        public static final int context_menu=0x7f070001;
+        public static final int patient_list=0x7f070002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
