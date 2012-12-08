@@ -20,7 +20,7 @@ public class PatientListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_list);
         
-        PatientListActivity.Patients = PatientList.loadTestData();
+        PatientListActivity.Patients = new ArrayList<Patient>();
         ListView patientList = (ListView) findViewById(android.R.id.list);
         PatientAdapter adapter = new PatientAdapter(this,
         		  Patients);
@@ -29,6 +29,15 @@ public class PatientListActivity extends Activity {
         
     }
 
+    @Override
+    public void onRestart(){
+         ListView patientList = (ListView) findViewById(android.R.id.list);
+         PatientAdapter adapter = new PatientAdapter(this,
+         		  Patients);
+         
+         patientList.setAdapter(adapter);
+    }
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.patient_list, menu);
