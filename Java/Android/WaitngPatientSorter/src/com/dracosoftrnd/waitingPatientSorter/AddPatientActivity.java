@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 public class AddPatientActivity extends Activity {
 
@@ -38,6 +39,13 @@ public class AddPatientActivity extends Activity {
     	btnAdd.setOnClickListener(new Button.OnClickListener() {
 
 			public void onClick(View v) {
+				if (txtName.getText().toString().matches(""))
+				{
+					Toast.makeText(AddPatientActivity.this, "Please enter patient's name", Toast.LENGTH_SHORT).show();
+					return;
+				}
+				else
+				{
 				String name = txtName.getText().toString();
 				int apptHour = appointment.getCurrentHour();
 				int apptMinute = appointment.getCurrentMinute();
@@ -49,6 +57,7 @@ public class AddPatientActivity extends Activity {
 				PatientList.GlobalPatients.add(newPatient);
 				Intent listPatients = new Intent(getApplicationContext(), PatientListActivity.class);
 	            startActivity(listPatients);
+				}
 			}
     	});
     	
