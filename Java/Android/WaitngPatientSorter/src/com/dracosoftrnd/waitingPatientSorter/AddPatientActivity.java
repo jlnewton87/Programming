@@ -1,5 +1,7 @@
 package com.dracosoftrnd.waitingPatientSorter;
 
+import org.joda.time.LocalTime;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -25,23 +27,27 @@ public class AddPatientActivity extends Activity {
     private void bindControls() {
     	final EditText txtName = (EditText)this.findViewById(R.id.txtName);
     	
+    	final TimePicker appointment = (TimePicker)this.findViewById(R.id.timeAppointment);
+        appointment.setIs24HourView(true);
+        
+        final TimePicker checkin = (TimePicker)this.findViewById(R.id.timeCheckin);
+        checkin.setIs24HourView(true);
+        
     	Button btnAdd = (Button)this.findViewById(R.id.btnAdd);
     	btnAdd.setOnClickListener(new Button.OnClickListener() {
 
 			public void onClick(View v) {
 				newPatient.name = txtName.toString();
+				int apptHour = appointment.getCurrentHour();
+				int apptMinute = appointment.getCurrentMinute();
+				newPatient.appointmentTime = new LocalTime(apptHour, apptMinute);
+				int checkinHour = checkin.getCurrentHour();
+				int checkinMinute = checkin.getCurrentMinute();
+				newPatient.checkinTime = new LocalTime(checkinHour, checkinMinute);
+				PatientListActivity.Patients.add(newPatient);
 				
 			}
     	});
-    	
-    	
-    	TimePicker appointment = (TimePicker)this.findViewById(R.id.timeAppointment);
-        appointment.setIs24HourView(true);
-        
-        TimePicker checkin = (TimePicker)this.findViewById(R.id.timeCheckin);
-        checkin.setIs24HourView(true);
-        
-        CheckBox checkInNow = (CheckBox)this.findViewById(R.id.chkNow);
     	
     	Button btnCancel = (Button)this.findViewById(R.id.btnCancel);
     	btnCancel.setOnClickListener(new Button.OnClickListener() {
