@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TimePicker;
 
 public class AddPatientActivity extends Activity {
@@ -22,15 +23,17 @@ public class AddPatientActivity extends Activity {
     }
 
     private void bindControls() {
-    	Button btnAdd = (Button)this.findViewById(R.id.btnAdd);
+    	final EditText txtName = (EditText)this.findViewById(R.id.txtName);
     	
-    	Button btnCancel = (Button)this.findViewById(R.id.btnCancel);
-    	btnCancel.setOnClickListener(new Button.OnClickListener() {
-    	    public void onClick(View v) {
-    	    	newPatient = null;
-                AddPatientActivity.this.finish();
-        }
-    });
+    	Button btnAdd = (Button)this.findViewById(R.id.btnAdd);
+    	btnAdd.setOnClickListener(new Button.OnClickListener() {
+
+			public void onClick(View v) {
+				newPatient.name = txtName.toString();
+				
+			}
+    	});
+    	
     	
     	TimePicker appointment = (TimePicker)this.findViewById(R.id.timeAppointment);
         appointment.setIs24HourView(true);
@@ -39,6 +42,15 @@ public class AddPatientActivity extends Activity {
         checkin.setIs24HourView(true);
         
         CheckBox checkInNow = (CheckBox)this.findViewById(R.id.chkNow);
+    	
+    	Button btnCancel = (Button)this.findViewById(R.id.btnCancel);
+    	btnCancel.setOnClickListener(new Button.OnClickListener() {
+    	    public void onClick(View v) {
+    	    	newPatient = null;
+                AddPatientActivity.this.finish();
+        }
+    });
+
 	}
 
 	@Override
