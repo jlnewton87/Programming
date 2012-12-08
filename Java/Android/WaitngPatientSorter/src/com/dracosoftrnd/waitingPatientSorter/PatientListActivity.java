@@ -23,17 +23,18 @@ public class PatientListActivity extends Activity {
         PatientListActivity.Patients = new ArrayList<Patient>();
         ListView patientList = (ListView) findViewById(android.R.id.list);
         PatientAdapter adapter = new PatientAdapter(this,
-        		  Patients);
+        		  PatientList.GlobalPatients);
         
         patientList.setAdapter(adapter);
         
     }
 
     @Override
-    public void onRestart(){
+    public void onResume(){
+    	super.onResume();
          ListView patientList = (ListView) findViewById(android.R.id.list);
          PatientAdapter adapter = new PatientAdapter(this,
-         		  Patients);
+         		  PatientList.GlobalPatients);
          
          patientList.setAdapter(adapter);
     }

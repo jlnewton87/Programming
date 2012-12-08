@@ -4,6 +4,7 @@ import org.joda.time.LocalTime;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -37,15 +38,17 @@ public class AddPatientActivity extends Activity {
     	btnAdd.setOnClickListener(new Button.OnClickListener() {
 
 			public void onClick(View v) {
-				newPatient.name = txtName.toString();
+				String name = txtName.getText().toString();
 				int apptHour = appointment.getCurrentHour();
 				int apptMinute = appointment.getCurrentMinute();
-				newPatient.appointmentTime = new LocalTime(apptHour, apptMinute);
+				LocalTime apptTime = new LocalTime(apptHour, apptMinute);
 				int checkinHour = checkin.getCurrentHour();
 				int checkinMinute = checkin.getCurrentMinute();
-				newPatient.checkinTime = new LocalTime(checkinHour, checkinMinute);
-				PatientListActivity.Patients.add(newPatient);
-				
+				LocalTime checkinTime = new LocalTime(checkinHour, checkinMinute);
+				newPatient = new Patient(name, apptTime, checkinTime);
+				PatientList.GlobalPatients.add(newPatient);
+				Intent listPatients = new Intent(getApplicationContext(), PatientListActivity.class);
+	            startActivity(listPatients);
 			}
     	});
     	

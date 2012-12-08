@@ -5,6 +5,8 @@ import org.joda.time.LocalTime;
 
 public class PatientList {
 	
+	public static ArrayList<Patient> GlobalPatients = new ArrayList<Patient>();
+	
 	public static ArrayList<Patient> loadTestData()
 	{
 		ArrayList<Patient> patients = new ArrayList<Patient>();
