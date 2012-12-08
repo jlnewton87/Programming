@@ -17,7 +17,7 @@ public class Patient implements Comparable<Patient>{
 		this.appointmentTime = appointment;
 		this.checkinTime = checkin;
 		this.differenceInMinutes = Integer.parseInt(Minutes.minutesBetween(appointment, checkin).toString().replace("PT", "").replace("M", ""));
-		this.effectiveTime = appointment.plusMinutes(differenceInMinutes);
+		this.effectiveTime = checkin.plusMinutes(differenceInMinutes);
 	}
 
 
