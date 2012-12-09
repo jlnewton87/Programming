@@ -27,8 +27,11 @@ public class PatientListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_list);
         setAdapter();
-        Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
-        startActivity(mainMenu);
+        if(PatientList.GlobalPatients.size() == 0)
+        {
+        	Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
+            startActivity(mainMenu);
+        }
         
     }
 

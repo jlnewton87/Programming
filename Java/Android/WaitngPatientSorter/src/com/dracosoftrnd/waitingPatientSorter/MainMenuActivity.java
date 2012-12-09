@@ -20,7 +20,6 @@ public class MainMenuActivity extends Activity{
 	private void bindControls() {
 		Button btnPatientList = (Button)this.findViewById(R.id.btnPatientList);
 		Button btnAddPatient = (Button)this.findViewById(R.id.btnAddPatient);
-		Button btnAbout = (Button)this.findViewById(R.id.btnAbout);
 		
 		btnPatientList.setOnClickListener(new Button.OnClickListener() {
     	    public void onClick(View v) {
@@ -33,13 +32,6 @@ public class MainMenuActivity extends Activity{
     	    public void onClick(View v) {
     	    	Intent addPatient = new Intent(getApplicationContext(), AddPatientActivity.class);
 	            startActivity(addPatient);
-        }
-    });
-		
-		btnAbout.setOnClickListener(new Button.OnClickListener() {
-    	    public void onClick(View v) {
-    	    	Intent about = new Intent(getApplicationContext(), AboutActivity.class);
-	            startActivity(about);
         }
     });
 		
