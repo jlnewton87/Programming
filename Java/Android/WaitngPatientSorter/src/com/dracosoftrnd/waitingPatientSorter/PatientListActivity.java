@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class PatientListActivity extends ListActivity {
@@ -84,6 +85,13 @@ public class PatientListActivity extends ListActivity {
     
 	private void setAdapter() {
 		ListView patientList = (ListView) findViewById(android.R.id.list);
+		patientList.setOnItemClickListener(new OnItemClickListener() {
+		    public void onItemClick(AdapterView<?> parent, View view,
+		            int position, long id) { 
+		    	Intent displayInfo = new Intent(getApplicationContext(), ItemInfoActivity.class);
+		    	  displayInfo.putExtra("arrayIndex", position);
+		          startActivity(displayInfo);
+		    }});
         Collections.sort(PatientList.GlobalPatients);
         PatientAdapter adapter = new PatientAdapter(this,
         		  PatientList.GlobalPatients);
