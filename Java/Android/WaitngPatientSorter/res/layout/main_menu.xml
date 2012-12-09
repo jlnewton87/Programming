@@ -9,20 +9,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" 
-        	android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:layout_height="match_parent" >
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Large Text"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Waiting Patient Sorter"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/btnPatientList"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/textView1"
+                android:text="Patient List" />
+            
+            <Button 
+                android:id="@+id/btnAddPatient"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Add Patient"
+                android:layout_below="@+id/btnPatientList"
+                />
+
+            <Button 
+                android:id="@+id/btnAbout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="About"
+                android:layout_below="@+id/btnAddPatient"
+                />
+            
+        </RelativeLayout>
+
     </ScrollView>
 
 </LinearLayout>

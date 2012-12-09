@@ -27,6 +27,8 @@ public class PatientListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_list);
         setAdapter();
+        Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
+        startActivity(mainMenu);
         
     }
 
@@ -63,6 +65,7 @@ public class PatientListActivity extends ListActivity {
       if (v.getId()==android.R.id.list) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
         menu.add(Menu.NONE, 1, 1, "Remove Patient");
+        menu.add(Menu.NONE, 2, 2, "Patient Info");
       }
     }
     
@@ -74,6 +77,10 @@ public class PatientListActivity extends ListActivity {
       {
     	  PatientList.GlobalPatients.remove(info.position);
     	  setAdapter();
+      }
+      if(menuItemIndex == 2)
+      {
+    	  
       }
         return true;
     }

@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddPatientActivity"></activity>
+        <activity android:name=".MainMenuActivity"></activity>
     </application>
 
 </manifest>
