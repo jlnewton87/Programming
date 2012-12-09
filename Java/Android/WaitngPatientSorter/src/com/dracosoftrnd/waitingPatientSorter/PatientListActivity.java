@@ -62,6 +62,7 @@ public class PatientListActivity extends ListActivity {
         ContextMenuInfo menuInfo) {
       if (v.getId()==android.R.id.list) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
+        menu.setHeaderTitle("Options");
         menu.add(Menu.NONE, 1, 1, "Remove Patient");
         menu.add(Menu.NONE, 2, 2, "Patient Info");
       }
@@ -78,7 +79,9 @@ public class PatientListActivity extends ListActivity {
       }
       if(menuItemIndex == 2)
       {
-    	  
+    	  Intent displayInfo = new Intent(getApplicationContext(), ItemInfoActivity.class);
+    	  displayInfo.putExtra("arrayIndex", info.position);
+          startActivity(displayInfo);
       }
         return true;
     }
