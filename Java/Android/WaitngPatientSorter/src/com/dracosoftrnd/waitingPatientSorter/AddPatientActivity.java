@@ -70,10 +70,4 @@ public class AddPatientActivity extends Activity {
     });
 
 	}
-
-	@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_add_patient, menu);
-        return true;
-    }
 }

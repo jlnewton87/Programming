@@ -1,24 +1,16 @@
 package com.dracosoftrnd.waitingPatientSorter;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import android.os.Bundle;
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class PatientListActivity extends ListActivity {
 
@@ -58,6 +50,9 @@ public class PatientListActivity extends ListActivity {
         case R.id.load_testData:
         	PatientList.loadTestData();
             setAdapter();
+        case R.id.mainMenu:
+        	Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
+            startActivity(mainMenu);
         }
 		return false;
     }
