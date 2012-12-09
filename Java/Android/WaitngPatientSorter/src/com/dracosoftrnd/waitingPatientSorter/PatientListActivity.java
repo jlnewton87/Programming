@@ -19,12 +19,6 @@ public class PatientListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.patient_list);
         setAdapter();
-        if(PatientList.GlobalPatients.size() == 0)
-        {
-        	Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
-            startActivity(mainMenu);
-        }
-        
     }
 
     @Override
@@ -50,9 +44,11 @@ public class PatientListActivity extends ListActivity {
         case R.id.load_testData:
         	PatientList.loadTestData();
             setAdapter();
+            return true;
         case R.id.mainMenu:
         	Intent mainMenu = new Intent(getApplicationContext(), MainMenuActivity.class);
             startActivity(mainMenu);
+            return true;
         }
 		return false;
     }
