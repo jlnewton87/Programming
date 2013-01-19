@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ServiceProcess;
 using System.Threading.Tasks;
 
 namespace MyComputer
@@ -12,15 +13,41 @@ namespace MyComputer
       public string Architecture;
       public string UserName;
       public string OSVersion;
+      public List<string> EnvironmentVariables = new List<string>();
+      public List<string> Services = new List<string>();
       public Computer()
       {
          ComputerName = Environment.GetEnvironmentVariable("computername");
          Architecture = Environment.GetEnvironmentVariable("processor_architecture");
          UserName = Environment.GetEnvironmentVariable("username");
          OSVersion = OSInfo();
+         Services = getServices();
       }
+
+      private List<string> getServices()
+      {
+          ServiceController[] services = ServiceController.GetServices();
+          List<string> serviceNames = new List<string>();
+          List<ServiceController> fullServices = services.ToList();
+          foreach (var service in fullServices)
+          {
+             
+              serviceNames.Add(service.DisplayName.ToString());
+          }
+          return serviceNames;
+      }
+
       public string OSInfo()
       {
+          EnVars vars = new EnVars();
+          System.Collections.IDictionary MyVariables = vars.GetVars();
+
+          foreach (string key in MyVariables.Keys)
+          {
+              EnvironmentVariables.Add(key + ": " + MyVariables[key].ToString());
+          }
+
+
          //Get Operating system information.
          OperatingSystem os = Environment.OSVersion;
          //Get version information about the os.

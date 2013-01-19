@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SurveyService1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54806/SurveyService1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54806/SurveyService1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISurveyService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_ServerHasSurveys_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServerHasSurveys" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_ServerHasSurveys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServerHasSurveysResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_AddSurveyToServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSurveyToServer" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_AddSurveyToServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSurveyToServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_GetSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurvey" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_GetSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_TestByCreatingADirectory_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestByCreatingADirectory" />
+  </wsdl:message>
+  <wsdl:message name="ISurveyService1_TestByCreatingADirectory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestByCreatingADirectoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISurveyService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISurveyService1/GetData" message="tns:ISurveyService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISurveyService1/GetDataResponse" message="tns:ISurveyService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServerHasSurveys">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISurveyService1/ServerHasSurveys" message="tns:ISurveyService1_ServerHasSurveys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISurveyService1/ServerHasSurveysResponse" message="tns:ISurveyService1_ServerHasSurveys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSurveyToServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISurveyService1/AddSurveyToServer" message="tns:ISurveyService1_AddSurveyToServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISurveyService1/AddSurveyToServerResponse" message="tns:ISurveyService1_AddSurveyToServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurvey">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISurveyService1/GetSurvey" message="tns:ISurveyService1_GetSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISurveyService1/GetSurveyResponse" message="tns:ISurveyService1_GetSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestByCreatingADirectory">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISurveyService1/TestByCreatingADirectory" message="tns:ISurveyService1_TestByCreatingADirectory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISurveyService1/TestByCreatingADirectoryResponse" message="tns:ISurveyService1_TestByCreatingADirectory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISurveyService1" type="tns:ISurveyService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/ISurveyService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServerHasSurveys">
+      <soap:operation soapAction="http://tempuri.org/ISurveyService1/ServerHasSurveys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSurveyToServer">
+      <soap:operation soapAction="http://tempuri.org/ISurveyService1/AddSurveyToServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurvey">
+      <soap:operation soapAction="http://tempuri.org/ISurveyService1/GetSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestByCreatingADirectory">
+      <soap:operation soapAction="http://tempuri.org/ISurveyService1/TestByCreatingADirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SurveyService1">
+    <wsdl:port name="BasicHttpBinding_ISurveyService1" binding="tns:BasicHttpBinding_ISurveyService1">
+      <soap:address location="http://localhost:54806/SurveyService1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
