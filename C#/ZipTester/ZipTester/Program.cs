@@ -12,9 +12,12 @@ namespace ZipTester
         static void Main(string[] args)
         {
             string directory = "C:\\Users\\josh\\Documents\\GitHub\\Programming\\HTML\\3260";
-            ZipFile zip = new ZipFile();
-            zip.AddDirectory(directory);
-            zip.Save(directory + "\\3260.zip");
+            using (ZipFile zip = new ZipFile())
+            {
+                zip.AddDirectory(directory);
+                zip.Save(directory + "\\3260.zip");
+            }
+
         }
     }
 }
