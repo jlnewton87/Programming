@@ -1,0 +1,9 @@
+﻿<Window x:Class="wpfPlay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="23" Margin="161,76,0,0" TextWrapping="Wrap" Text="{Binding Value, ElementName=slider1}" VerticalAlignment="Top" Width="120"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="137,179,0,0" VerticalAlignment="Top" Value="{Binding Text, ElementName=text1}" Width="199" SmallChange="0"/>
+    </Grid>
+</Window>
