@@ -1,4 +1,4 @@
-rankhospital <- function(state, outcome, num = "best") { 
+rankhospital1 <- function(state, outcome, num = "best") { 
   source('unique.R')
   outcomes = c('heart attack', 'heart failure', 'pneumonia')
   outcome1 = read.csv("outcome-of-care-measures.csv", 
@@ -36,22 +36,22 @@ rankhospital <- function(state, outcome, num = "best") {
   if(diseaseCol == 11)
   {
     state1 = state1[order(state1$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack),]
-    state1 = state1[,c(2,diseaseCol)]
+    state1 = state1[,c(2,7,diseaseCol)]
   }
   if(diseaseCol == 17)
   {
     state1 = state1[order(state1$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure),]
-    state1 = state1[,c(2,diseaseCol)]
+    state1 = state1[,c(2,7,diseaseCol)]
   }
   if(diseaseCol == 23)
   {
     state1 = state1[order(state1$Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia),]
-    state1 = state1[,c(2,diseaseCol)]
+    state1 = state1[,c(2,7,diseaseCol)]
   }
   state1=state1[complete.cases(state1),]
   if(num=='worst'){num = nrow(state1)}
   if(num=='best'){num = 1}
   hos = state1[num,]
-  return(hos$Hospital.Name)
+  return(data.frame(rbind(c(hospital = hos$Hospital.Name, state = hos$State))))
   
 }
