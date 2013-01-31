@@ -25,10 +25,10 @@ namespace ServiceTester
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MyService.SurveyService1Client sc = new MyService.SurveyService1Client();
-            sc.TestByCreatingADirectory(MyTextBox.Text);
+            GodaddyService.Service1Client sc = new GodaddyService.Service1Client();
+            MessageBox.Show(await sc.GetDataAsync(Convert.ToInt32(MyTextBox.Text)));
         }
     }
 }
