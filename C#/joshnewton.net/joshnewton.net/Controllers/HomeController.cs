@@ -24,7 +24,7 @@ namespace joshnewton.net.Controllers
 
       public ActionResult Contact()
       {
-         ViewBag.Message = "Contact me.";
+         ViewBag.Message = "";
 
          return View();
       }
