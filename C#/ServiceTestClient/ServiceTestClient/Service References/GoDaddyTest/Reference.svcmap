@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cd8beae1-a34a-4e43-b0bd-27fffdcd20ca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://joshnewton.net/services/godaddytest.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GoDaddyTest.xsd" MetadataType="Schema" ID="cda075d1-ca6d-4d6e-be18-cc71fe2ea6f0" SourceId="1" SourceUrl="http://joshnewton.net/services/GoDaddyTest.svc?xsd=xsd2" />
+    <MetadataFile FileName="GoDaddyTest1.xsd" MetadataType="Schema" ID="11821b0e-75f2-478a-b81b-bfdd0df33184" SourceId="1" SourceUrl="http://joshnewton.net/services/GoDaddyTest.svc?xsd=xsd1" />
+    <MetadataFile FileName="GoDaddyTest.disco" MetadataType="Disco" ID="0c7c9af0-1327-47c1-a940-53542bb9408d" SourceId="1" SourceUrl="http://joshnewton.net/services/GoDaddyTest.svc?disco" />
+    <MetadataFile FileName="GoDaddyTest.wsdl" MetadataType="Wsdl" ID="93bac43e-eed5-40d4-a3ba-fbb354f5c49a" SourceId="1" SourceUrl="http://joshnewton.net/services/GoDaddyTest.svc?wsdl" />
+    <MetadataFile FileName="GoDaddyTest2.xsd" MetadataType="Schema" ID="a0fe3556-c61a-422b-a8b4-be940a2b203a" SourceId="1" SourceUrl="http://joshnewton.net/services/GoDaddyTest.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

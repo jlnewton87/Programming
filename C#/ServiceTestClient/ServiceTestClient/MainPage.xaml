@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="ServiceTestClient.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ServiceTestClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Enter a number" VerticalAlignment="Top" Margin="457,114,0,0" Width="134" Background="Black" Foreground="LightGray" Height="35" GotFocus="txtGotFocus" LostFocus="txtLostFocus"/>
+        <Button x:Name="btnAccept" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="536,174,0,0" Click="btnAccept_Click"/>
+
+    </Grid>
+</Page>
