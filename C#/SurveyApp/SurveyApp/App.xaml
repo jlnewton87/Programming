@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="SurveyApp.App"
+    x:Class="SurveyAppClasses.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SurveyApp">
+    xmlns:local="using:SurveyAppClasses">
 
     <Application.Resources>
         <ResourceDictionary>

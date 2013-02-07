@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using CustomControlTester;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -14,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace SurveyApp
+namespace SurveyAppClasses
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -35,7 +36,12 @@ namespace SurveyApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             SurveyHelper helper = new SurveyHelper();
-            listviewSurveyContainer.ItemsSource = helper.Questions;
+            foreach (var question in helper.Questions)
+            {
+                QuestionContainer qcon = new QuestionContainer(question);
+                QuestionArea.Children.Add(qcon);
+
+            }
         }
     }
 }
