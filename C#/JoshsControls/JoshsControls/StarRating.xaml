@@ -1,0 +1,20 @@
+﻿<UserControl
+    x:Class="JoshsControls.StarRating"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JoshsControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="115">
+
+    <Path x:Name="Stars" Stretch="Fill" Data="M71.5312,-6.98479 L93.9844,43.8277 L143.156,47.3902 L107.672,90.3746 L116.203,145.968 L71.5312,119.718 L26.9062,145.968 L35.4375,90.3746 L1E-06,47.3902 L49.125,43.8277 L71.5312,-6.98479 z M214.688,-6.98479 L237.141,43.8277 L286.313,47.3902 L250.829,90.3746 L259.36,145.968 L214.688,119.718 L170.063,145.968 L178.594,90.3746 L143.157,47.3902 L192.282,43.8277 L214.688,-6.98479 z M357.845,-6.98479 L380.298,43.8277 L429.47,47.3902 L393.985,90.3746 L402.516,145.968 L357.845,119.718 L313.22,145.968 L321.751,90.3746 L286.313,47.3902 L335.438,43.8277 L357.845,-6.98479 z M501.001,-6.98479 L523.454,43.8277 L572.626,47.3902 L537.142,90.3746 L545.673,145.968 L501.001,119.718 L456.376,145.968 L464.908,90.3746 L429.47,47.3902 L478.595,43.8277 L501.001,-6.98479 z M644.158,-6.98479 L666.611,43.8277 L715.783,47.3902 L680.299,90.3746 L688.83,145.968 L644.158,119.718 L599.533,145.968 L608.064,90.3746 L572.627,47.3902 L621.752,43.8277 L644.158,-6.98479 z" HorizontalAlignment="Left" Stroke="#FFFFFF05" UseLayoutRounding="False" Margin="0,0,0,29">
+        <Path.Fill>
+            <LinearGradientBrush EndPoint="0,0" StartPoint="1,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="Gold" Offset="1"/>
+            </LinearGradientBrush>
+        </Path.Fill>
+    </Path>
+
+</UserControl>
