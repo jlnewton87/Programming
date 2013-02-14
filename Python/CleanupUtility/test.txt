@@ -1,0 +1,7 @@
+for project_date in y.old:
+    date_time = y.old[project_date]
+    date_time_separate = date_time.split(' ')
+    date_separate = date_time_separate[0].split('-')
+    date_object = datetime.date(int(date_separate[0]), int(date_separate[1]), int(date_separate[2]))
+    if datetime.date.today() == date_object + datetime.timedelta(+1):
+             print 'I\'ve done it!!!!!!'
