@@ -23,7 +23,7 @@ namespace SurveyAppClasses
                 newQuestion.Type = "check";
                 newQuestion.Text = String.Format("This is a question: #{0}", i);
                 newQuestion.Choices = new List<SurveyChoice>();
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < 20; j++)
                 {
                     Random ran = new Random();
                     int random = ran.Next(0, 100);

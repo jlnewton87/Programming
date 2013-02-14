@@ -8,9 +8,15 @@
     mc:Ignorable="d">
 
     <Grid>
-		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Survey App Version 1.0 A" VerticalAlignment="Top" Height="125" Width="1346" FontSize="36"/>
-		<ScrollViewer HorizontalAlignment="Left" Height="618" VerticalAlignment="Top" Width="1346" Margin="10,140,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-			<StackPanel x:Name="QuestionArea" HorizontalAlignment="Left" Height="618" VerticalAlignment="Top" Orientation="Horizontal"/>
-		</ScrollViewer>
+    	<Grid.Background>
+    		<SolidColorBrush Color="{StaticResource Light}"/>
+    	</Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Survey App Version 1.0 A" VerticalAlignment="Top" Height="125" Width="1346" FontSize="36">
+        	<TextBlock.Foreground>
+        		<SolidColorBrush Color="{StaticResource Blueish}"/>
+        	</TextBlock.Foreground>
+        </TextBlock>
+        <FlipView Name="QuestionArea" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="1346" Height="618">
+        </FlipView>
 	</Grid>
 </Page>

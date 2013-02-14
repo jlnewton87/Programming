@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using CustomControlTester;
+using SurveyAppClasses;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -39,7 +39,7 @@ namespace SurveyAppClasses
             foreach (var question in helper.Questions)
             {
                 QuestionContainer qcon = new QuestionContainer(question);
-                QuestionArea.Children.Add(qcon);
+                QuestionArea.Items.Add(qcon);
 
             }
         }

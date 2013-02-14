@@ -14,6 +14,11 @@
                  -->
                 <ResourceDictionary Source="Common/StandardStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="Light">#E8DDCB</Color>
+            <Color x:Key="Lightish">#CDB380</Color>
+            <Color x:Key="LightBlue">#036564</Color>
+            <Color x:Key="DarkBlue">#033649</Color>
+            <Color x:Key="Blueish">#031634</Color>
 
         </ResourceDictionary>
     </Application.Resources>
