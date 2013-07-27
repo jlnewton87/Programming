@@ -1,0 +1,24 @@
+﻿<Window x:Class="AtlantaRentals.Views.NewLease"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Lease Entry" Height="313.433" Width="364.179">
+    <Grid>
+        <Label Content="Client Id" HorizontalAlignment="Left" Margin="87,17,0,0" VerticalAlignment="Top"/>
+        <Label Content="Property Id" HorizontalAlignment="Left" Margin="72,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Method Of Payment" HorizontalAlignment="Left" Margin="24,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Deposit Made" HorizontalAlignment="Left" Margin="57,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Start" HorizontalAlignment="Left" Margin="106,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="End" HorizontalAlignment="Left" Margin="106,172,0,0" VerticalAlignment="Top"/>
+        <Label Content="Approved" Margin="79,198,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="62"/>
+        <ComboBox HorizontalAlignment="Left" Margin="197,21,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="197,52,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="197,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Margin="197,121,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="197,143,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="197,174,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Margin="197,209,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="258,249,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+        <Button Content="Add Lease" HorizontalAlignment="Left" Margin="160,249,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="AtlantaRentals.Views.EditProperty"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Property" Height="331.343" Width="722.388">
+    <Grid>
+        <Label Content="Street" HorizontalAlignment="Left" Margin="77,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="88,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="81,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="91,155,0,0" VerticalAlignment="Top"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="83,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number of Rooms" HorizontalAlignment="Left" Margin="353,155,0,0" VerticalAlignment="Top"/>
+        <Label Content="Monthly Rent" HorizontalAlignment="Left" Margin="379,124,0,0" VerticalAlignment="Top"/>
+        <Label Content="Available FOr Purchase" HorizontalAlignment="Left" Margin="330,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="425,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Owner Id" HorizontalAlignment="Left" Margin="402,62,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="147,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="147,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="147,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="147,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="147,190,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="488,62,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="488,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="488,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="488,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Margin="488,197,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="575,245,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+        <Button Content="Save Property" HorizontalAlignment="Left" Margin="425,245,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label Content="Property to Edit" HorizontalAlignment="Left" Margin="173,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="314,14,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

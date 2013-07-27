@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="VinCalc.VinCalculator" CodeBehind="VinCalculator.svc.cs" %>

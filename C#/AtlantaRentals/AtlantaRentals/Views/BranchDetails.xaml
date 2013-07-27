@@ -1,0 +1,11 @@
+﻿<Window x:Class="AtlantaRentals.Views.BranchDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BranchDetails" Height="326.866" Width="902.985">
+    <Grid>
+        <Label Content="Select City" HorizontalAlignment="Left" Margin="36,26,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbCity" HorizontalAlignment="Left" Margin="138,30,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbCity_Changed"/>
+        <DataGrid x:Name="dtReport" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Height="229" Width="875"/>
+
+    </Grid>
+</Window>

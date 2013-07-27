@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f049cd0d-4ad8-4391-bcf8-c719ad632d9e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://joshnewton.net/services/automation.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Automation.xsd" MetadataType="Schema" ID="8720ee41-3d47-43ee-968d-029ff90413e9" SourceId="1" SourceUrl="http://joshnewton.net/services/Automation.svc?xsd=xsd1" />
+    <MetadataFile FileName="Automation.disco" MetadataType="Disco" ID="fff3dae4-0abe-4c7f-8b34-20bab2645935" SourceId="1" SourceUrl="http://joshnewton.net/services/Automation.svc?disco" />
+    <MetadataFile FileName="Automation1.xsd" MetadataType="Schema" ID="6d1c1046-fab8-441c-be91-ff4e820cce15" SourceId="1" SourceUrl="http://joshnewton.net/services/Automation.svc?xsd=xsd0" />
+    <MetadataFile FileName="Automation.wsdl" MetadataType="Wsdl" ID="dd8af2b7-bc61-4a91-b90f-ab46f018544a" SourceId="1" SourceUrl="http://joshnewton.net/services/Automation.svc?wsdl" />
+    <MetadataFile FileName="Automation2.xsd" MetadataType="Schema" ID="2a172e46-97ce-4cdc-b053-e1addec054e1" SourceId="1" SourceUrl="http://joshnewton.net/services/Automation.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

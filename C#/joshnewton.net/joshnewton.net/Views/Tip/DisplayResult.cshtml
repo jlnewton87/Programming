@@ -1,0 +1,22 @@
+﻿@model joshnewton.net.Models.TipMatrix
+
+@{
+    ViewBag.Title = "Tips";
+    var matrix = (joshnewton.net.Models.TipMatrix)ViewBag.Matrix;
+}
+
+<h2>Result Set</h2>
+<table border="1">
+    <tr><td colspan="2">10%</td></tr>
+   <tr><td>Tip</td><td>$@matrix.Tip1</td></tr>
+   <tr><td>Total</td><td>$@matrix.Total1</td></tr>
+    <tr><td colspan="2">15%</td></tr>
+   <tr><td>Tip</td><td>$@matrix.Tip2</td></tr>
+   <tr><td>Total</td><td>$@matrix.Total2</td></tr>
+    <tr><td colspan="2">20%</td></tr>
+   <tr><td>Tip</td><td>$@matrix.Tip3</td></tr>
+   <tr><td>Total</td><td>$@matrix.Total3</td></tr>
+    <tr><td colspan="2">25%</td></tr>
+   <tr><td>Tip</td><td>$@matrix.Tip4</td></tr>
+   <tr><td>Total</td><td>$@matrix.Total4</td></tr>
+</table>

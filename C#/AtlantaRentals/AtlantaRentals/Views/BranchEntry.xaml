@@ -1,0 +1,27 @@
+﻿<Window x:Class="AtlantaRentals.Views.BranchEntry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Branch Entry" Height="361.194" Width="370.149">
+    <Grid>
+        <Label Content="Street" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Manager Id" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtStreet" HorizontalAlignment="Left" Height="23" Margin="166,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="23" Margin="166,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Height="23" Margin="166,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Height="23" Margin="166,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbManagerIds" HorizontalAlignment="Left" Margin="166,138,0,0" VerticalAlignment="Top" Width="120">
+            
+        </ComboBox>
+        <Label Content="Phone 1" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone 2" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone 3" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPhone1" HorizontalAlignment="Left" Height="23" Margin="166,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhone2" HorizontalAlignment="Left" Height="23" Margin="166,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPhone3" HorizontalAlignment="Left" Height="23" Margin="166,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddBranch" Content="Add Branch" HorizontalAlignment="Left" Margin="183,283,0,0" VerticalAlignment="Top" Width="75" Click="btnAddBranch_Click"/>
+        <Button x:Name="btnEditBranch" Content="Edit Branch" HorizontalAlignment="Left" Margin="277,283,0,0" VerticalAlignment="Top" Width="75" Click="btnEditBranch_Click"/>
+    </Grid>
+</Window>
