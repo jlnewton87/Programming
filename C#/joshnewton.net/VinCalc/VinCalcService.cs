@@ -23,7 +23,7 @@ namespace VinCalc
             bool output = true;
             try
             {
-                int.Parse(digit);
+                int.Parse(digit.ToString());
             }
             catch 
             {
