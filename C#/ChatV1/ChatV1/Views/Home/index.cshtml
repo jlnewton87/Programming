@@ -9,3 +9,25 @@
 
     </ul>
 </div>
+
+<div id="chat_controls">
+    <input type="text" id="new_message" />
+    <button id="btnSubmit">Submit</button>
+</div>
+
+<script type="text/javascript">
+    
+    (function () {
+        $("#btnSubmit").button().click(function (event) {
+            var message;
+            message = $("#new_message").val();
+            $.ajax({
+                url: "http://localhost:44793/Home/AddMessage",
+                type: "POST",
+                data: "jsonMessage=" + message,
+                success: function () { alert("Done!"); }
+            });
+            event.preventDefault();
+        });
+    }());
+</script>
