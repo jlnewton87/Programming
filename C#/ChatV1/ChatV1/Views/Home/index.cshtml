@@ -25,7 +25,7 @@
                 url: "http://localhost:44793/Home/AddMessage",
                 type: "POST",
                 data: "jsonMessage=" + message,
-                success: function () { alert("Done!"); }
+                success: function () { alert("Done!"); $("#new_message").val(""); }
             });
             event.preventDefault();
         });
