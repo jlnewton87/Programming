@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Enter Bill Amount";
+}
+
+<h2>Bill Amount</h2>
+    <input type="text" id="double" />
+    <input type="button" onclick="navigate()" value="Get tips!" />
+<script>
+function navigate(){
+    var x=document.getElementById("double");
+    var url = '/Tip/calc/' + x.value;
+    window.location.href=url;
+}
+    </script>

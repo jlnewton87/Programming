@@ -1,0 +1,12 @@
+﻿<Window x:Class="RecordCount.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Row Counter" Height="364.925" Width="578.732" AllowDrop="True" Drop="fileDropped">
+    <Grid>
+        <DataGrid x:Name="dgRowCounts" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="299" Width="424">
+        </DataGrid>
+        <CheckBox x:Name="cbHasHeader" Content="Header Row?" HorizontalAlignment="Left" Margin="462,10,0,0" VerticalAlignment="Top" Unchecked="noHeaders" Checked="withHeaders"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="477,142,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

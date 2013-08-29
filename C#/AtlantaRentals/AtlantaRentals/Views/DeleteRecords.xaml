@@ -1,0 +1,30 @@
+﻿<Window x:Class="AtlantaRentals.Views.DeleteRecords"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Delete Records" Height="305.97" Width="525.373">
+    <Grid>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="407,237,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+        <Label Content="Branch Number" HorizontalAlignment="Left" Margin="23,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Staff Id" HorizontalAlignment="Left" Margin="68,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ad Id" HorizontalAlignment="Left" Margin="78,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rental Id" HorizontalAlignment="Left" Margin="59,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lease Id" HorizontalAlignment="Left" Margin="63,163,0,0" VerticalAlignment="Top"/>
+        <Label Content="Manager Id" HorizontalAlignment="Left" Margin="269,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Newspaper Id" HorizontalAlignment="Left" Margin="257,70,0,0" VerticalAlignment="Top"/>
+        <Label Content="Property Id" HorizontalAlignment="Left" Margin="271,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Owner Id" HorizontalAlignment="Left" Margin="281,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Viewing Id" HorizontalAlignment="Left" Margin="274,163,0,0" VerticalAlignment="Top"/>
+        <Button Content="Delete Selected Item" HorizontalAlignment="Left" Margin="244,237,0,0" VerticalAlignment="Top" Width="132"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,43,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,74,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,105,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,136,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="121,167,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,43,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,74,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,105,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,136,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="360,167,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

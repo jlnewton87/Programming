@@ -1,0 +1,33 @@
+﻿body {
+    background-color:#808080;
+}
+#site-title {
+    font-family:DokChampa, Arial, Verdana;
+    margin-left:10%;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:2px;
+    display:inline;
+}
+.title {
+    margin-bottom:80px;
+}
+#main-container {
+    background-color:#808080;
+    height:87%;
+    width:85%;
+    position:absolute;
+}
+#main-content {
+    border:1px solid black;
+    border-radius:6px;
+    box-shadow:10px 5px 5px #464646;
+    margin-left:10%;
+    height:95%;
+    width:95%;
+}
+#btnLogin {
+    float:right;
+    margin-right:-50px;
+    font-size:.9em;
+}

@@ -1,0 +1,34 @@
+﻿<Window x:Class="AtlantaRentals.Views.EditOwner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Owner" Height="359.552" Width="756.716">
+    <Grid>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="26,43,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Street" HorizontalAlignment="Left" Margin="26,74,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="26,105,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="26,136,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="26,167,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="26,198,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="425,40,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="519,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="423,75,0,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="519,78,0,0" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label Content="Type Of Business" HorizontalAlignment="Left" Margin="383,108,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="519,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Contact Name" HorizontalAlignment="Left" Margin="397,139,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="519,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="519,171,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Property Owner Type" HorizontalAlignment="Left" Margin="361,167,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="643,279,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+        <Button Content="Save Property Owner" HorizontalAlignment="Left" Margin="476,279,0,0" VerticalAlignment="Top" Width="127"/>
+        <Label Content="Owner to Edit" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="343,13,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="AtlantaRentals.Views.StaffEntry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Staff Entry" Height="443.284" Width="422.387">
+    <Grid>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="42,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="Street" HorizontalAlignment="Left" Margin="43,43,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="54,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="47,105,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="57,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Position" HorizontalAlignment="Left" Margin="31,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="35,224,0,0" VerticalAlignment="Top"/>
+        <Label Content="Salary" HorizontalAlignment="Left" Margin="43,193,0,0" VerticalAlignment="Top"/>
+        <Label Content="DOB" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top"/>
+        <Label Content="Branch" HorizontalAlignment="Left" Margin="38,317,0,0" VerticalAlignment="Top"/>
+        <Label Content="Supervisor" HorizontalAlignment="Left" Margin="18,286,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,16,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="119,166,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="119,228,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="119,290,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="119,321,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="329,382,0,0" VerticalAlignment="Top" Width="75" Click="btnClose_Click"/>
+        <Button x:Name="btnAddStaff" Content="Add Staff" HorizontalAlignment="Left" Margin="222,382,0,0" VerticalAlignment="Top" Width="75" Click="btnAddStaff_Click"/>
+
+    </Grid>
+</Window>

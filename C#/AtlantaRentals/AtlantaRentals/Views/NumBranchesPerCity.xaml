@@ -1,0 +1,9 @@
+﻿<Window x:Class="AtlantaRentals.Views.NumBranchesPerCity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Number of Branches Per City" Height="300" Width="894.03">
+    <Grid>
+        <DataGrid x:Name="dtReport"/>
+
+    </Grid>
+</Window>

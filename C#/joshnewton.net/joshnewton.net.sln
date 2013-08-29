@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "joshnewton.net", "joshnewton.net\joshnewton.net.csproj", "{8EB94127-71E1-4FB7-8B0F-A8E8E2CE7552}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VinCalc", "VinCalc\VinCalc.csproj", "{B4900071-D658-4A4C-B168-CF3A31F33A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{8EB94127-71E1-4FB7-8B0F-A8E8E2CE7552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB94127-71E1-4FB7-8B0F-A8E8E2CE7552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB94127-71E1-4FB7-8B0F-A8E8E2CE7552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4900071-D658-4A4C-B168-CF3A31F33A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4900071-D658-4A4C-B168-CF3A31F33A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4900071-D658-4A4C-B168-CF3A31F33A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4900071-D658-4A4C-B168-CF3A31F33A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

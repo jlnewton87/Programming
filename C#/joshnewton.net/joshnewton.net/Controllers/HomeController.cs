@@ -10,8 +10,6 @@ namespace joshnewton.net.Controllers
    {
       public ActionResult Index()
       {
-         ViewBag.Message = "Where it all begins.";
-
          return View();
       }
 
@@ -27,6 +25,13 @@ namespace joshnewton.net.Controllers
          ViewBag.Message = "";
 
          return View();
+      }
+
+      public ActionResult Main()
+      {
+          ViewBag.Message = "";
+
+          return View();
       }
    }
 }

@@ -20,7 +20,6 @@ namespace JoshsControls
    public sealed partial class StarRating : UserControl
    {
       private double val;
-      public event EventHandler ValueChanged;
       public double Value
       {
          get
@@ -33,30 +32,40 @@ namespace JoshsControls
             GradientStopCollection col = new GradientStopCollection();
             GradientStop stop1 = new GradientStop();
             GradientStop stop2 = new GradientStop();
-            stop1.Color = Color.FromArgb(255, 255, 215, 0);
+            stop1.Color = FillColor;
             stop1.Offset = val / 5;
-            stop2.Color = Color.FromArgb(255, 0, 0, 0);
+            stop2.Color = EmptyColor;
             stop2.Offset = val / 5;
             col.Add(stop1);
             col.Add(stop2);
             LinearGradientBrush brush = new LinearGradientBrush(col, 0);
             Stars.Fill = brush;
-            OnValueChanged();
          }
       }
-
-      private void OnValueChanged()
+      private Color fillColor = Colors.Gold;
+      private Color emptyColor = Colors.Black;
+      private Color borderColor = Colors.Gold;
+       public Color BorderColor
       {
-         EventHandler localEvent = ValueChanged;
-         if (localEvent != null)
-         {
-            localEvent(this, EventArgs.Empty);
-         }
+          get { return borderColor; }
+          set { borderColor = value; }
       }
-
+      public Color FillColor
+      {
+          get { return fillColor; }
+          set{fillColor = value;}
+      }
+      public Color EmptyColor
+      {
+          get { return emptyColor; }
+          set { emptyColor = value; }
+      }
       public StarRating()
       {
          this.InitializeComponent();
+         Value = 0.1;
+         Value = 0;
+         Stars.Stroke = new SolidColorBrush(borderColor);
       }
    }
 }
