@@ -11,8 +11,10 @@
     @Scripts.Render("~/bundles/jqueryui")
 </head>
 <body>
-    @RenderBody()
+    <div id="content_wrapper">
+        @RenderBody()
 
-    @RenderSection("scripts", required: false)
+        @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>

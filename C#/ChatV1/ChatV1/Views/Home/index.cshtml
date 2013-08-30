@@ -2,7 +2,7 @@
     ViewBag.Title = "index";
 }
 
-<h2>Chat Test</h2>
+<h1 class="title"><img id="fake_back_button" src="~/Content/images/back.png" title="Fake Back Button" alt="Fake Back Button" />&nbsp;&nbsp;Chat Test</h1>
 
 <div id="chat_container">
     <ul id="conversation_content">
@@ -29,5 +29,6 @@
             });
             event.preventDefault();
         });
+        $("#fake_back_button").click(function () { alert("That's just for show"); });
     }());
 </script>
