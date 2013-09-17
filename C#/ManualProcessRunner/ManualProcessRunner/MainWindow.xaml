@@ -2,21 +2,24 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ManualProcessRunner.MainWindow"
-        Title="MainWindow" Height="427" Width="680" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FF0BD1FD">
+        Title="MainWindow" Height="427" Width="680" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#72AAFFFF" Offset="0"/>
+            <GradientStop Color="#7F0023FF" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <Border BorderThickness="3" HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="680" BorderBrush="#FF0C93F0">
-            <Border.Effect>
-                <DropShadowEffect/>
-            </Border.Effect>
-            <Grid Margin="7">
-                <Grid.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="#FFA2D9EA" Offset="1"/>
-                        <GradientStop Color="White"/>
-                    </LinearGradientBrush>
-                </Grid.Background>
-                <Button Content="X" HorizontalAlignment="Left" Margin="633,10,0,0" VerticalAlignment="Top" Width="17" Height="19" Background="#FFF90000" BorderBrush="#FF00DCFF" Foreground="White" Click="Exit"/>
-            </Grid>
-        </Border>
+        <Grid Margin="10">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEEFAFB" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Button Content="&#xE10A;" x:Name="btnX" FontFamily="Segoe UI Symbol" HorizontalAlignment="Left" Margin="628,10,0,0" VerticalAlignment="Top" Width="22" Height="19" Background="#FFF90000" BorderBrush="Black" Foreground="White" Click="Exit" MouseEnter="HoverX" MouseLeave="HoverOffX"/>
+            <Button x:Name="btnDoSomething" Content="Do Something" HorizontalAlignment="Left" Margin="428,377,0,0" VerticalAlignment="Top" Width="96" Background="#FF030878" Foreground="White"/>
+            <Button x:Name="btnExit" Content="E_xit" HorizontalAlignment="Left" Margin="575,377,0,0" VerticalAlignment="Top" Width="75" Background="#FF030878" Foreground="White" Click="Exit"/>
+        </Grid>
     </Grid>
 </Window>

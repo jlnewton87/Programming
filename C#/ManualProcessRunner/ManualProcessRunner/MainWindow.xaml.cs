@@ -23,11 +23,24 @@ namespace ManualProcessRunner
         {
             MouseDown += delegate{DragMove();};
             InitializeComponent();
+            btnExit.IsCancel = true;
         }
 
         private void Exit(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void HoverX(object sender, MouseEventArgs e)
+        {
+            btnX.Foreground = Brushes.Red;
+            btnX.Background = Brushes.White;
+        }
+
+        private void HoverOffX(object sender, MouseEventArgs e)
+        {
+            btnX.Foreground = Brushes.White;
+            btnX.Background = Brushes.Red;
         }
     }
 }
