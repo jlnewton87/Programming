@@ -1,0 +1,29 @@
+﻿#title_bar
+{
+    color:White;
+    background-color:Black;
+}
+#content
+{
+    border:1px solid #CCCCCC;
+    width:90%;
+    min-height:20px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding:10px;
+}
+#DetailsView1
+{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#GridView1
+{
+    margin-left:auto;
+    margin-right:auto;
+}

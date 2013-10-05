@@ -1,12 +1,4 @@
-﻿body 
-{
-    margin-top: 0px;
-    font-size: .85em;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    color: #fff;
-    background-color: #242424;
-    border-top: 4px solid #FF9900;
-}
+﻿
 
 header, footer, nav, section 
 {
@@ -76,6 +68,16 @@ textarea
 
 /* Custom Styles
 -----------------------------------------------------------*/
+body 
+{
+    margin-top: 0px;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #fff;
+    background-color: #242424;
+    border-top: 4px solid #FF9900;
+}
+
 #content_wrapper
 {
    width: 80%;
@@ -101,12 +103,13 @@ button
    color: #FF9900;
    font-weight: bold;
 }
-   button:hover
-   {
-      border: 2px solid #B26B00;
-      color: #B26B00;
-      background-color: #000;
-   }
+
+button:hover
+{
+    border: 2px solid #B26B00;
+    color: #B26B00;
+    background-color: #000;
+}
 
 input
 {
@@ -114,10 +117,11 @@ input
    border: 2px solid #FF9900;
    margin: 5px;
 }
-   input:hover
-   {
-      border: 2px solid #B26B00;
-   }
+
+input:hover
+{
+    border: 2px solid #B26B00;
+}
 
 #fake_back_button
 {

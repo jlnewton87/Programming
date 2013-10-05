@@ -1,0 +1,50 @@
+﻿body
+{
+    background-color:Black;
+    color:White;
+}
+img.center
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#footer-content
+{
+    position:absolute;
+    text-align:center;
+    vertical-align:bottom;
+}
+#Login1
+{
+    margin:20px auto 30px auto;
+}
+#mission_list p
+{
+    text-align:center;
+}
+#mission_list thead
+{
+    text-align:center;
+}
+#mission_list table
+{
+    width:500px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:25px;
+    border:5px solid Red;
+}
+#mission_list td, #mission_list th
+{
+    border-style:solid;
+    border-color:White;
+    border-width:1px;
+    border-collapse:collapse;
+}
+#login_status
+{
+    float:right;
+    position:relative;
+    top:-30px;
+}
