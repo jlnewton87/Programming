@@ -141,6 +141,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GraduationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SnippetKeeperController.cs" />
     <Compile Include="Controllers\TipController.cs" />
@@ -148,11 +149,36 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Attendee.cs">
+      <DependentUpon>Graduation.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Graduation.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graduation.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Graduation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graduation.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Graduation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Graduation.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RSVP.cs">
+      <DependentUpon>Graduation.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\TipModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\grad.css" />
     <Content Include="Content\images\animated-overlay.gif" />
+    <Content Include="Content\images\KSU.png" />
+    <Content Include="Content\images\KSULogo.png" />
+    <Content Include="Content\images\Name.png" />
     <Content Include="Content\images\ui-bg_flat_30_cccccc_40x100.png" />
     <Content Include="Content\images\ui-bg_flat_50_5c5c5c_40x100.png" />
     <Content Include="Content\images\ui-bg_glass_25_000000_1x400.png" />
@@ -168,6 +194,7 @@
     <Content Include="Content\images\ui-icons_cccccc_256x240.png" />
     <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Content\scripts\Grad_Rsvp.js" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -223,8 +250,28 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\KSU-theme\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\themes\KSU-theme\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\fonts\Bleeding_Cowboys.ttf" />
+    <EntityDeploy Include="Models\Graduation.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Graduation.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Graduation.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Graduation.edmx</DependentUpon>
+      <LastGenOutput>Graduation.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Graduation.edmx.diagram">
+      <DependentUpon>Graduation.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Graduation.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Graduation.edmx</DependentUpon>
+      <LastGenOutput>Graduation.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\GodaddyRoot.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -285,6 +332,9 @@
     <Content Include="Views\Tip\DisplayResult.cshtml" />
     <Content Include="Views\Tip\index.cshtml" />
     <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Shared\_GradAnnouncement.cshtml" />
+    <Content Include="Views\Graduation\Index.cshtml" />
+    <Content Include="Views\Graduation\Thanks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
