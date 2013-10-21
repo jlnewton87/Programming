@@ -1,0 +1,56 @@
+﻿body
+{
+    background-color:black;
+}
+p
+{
+    font-family:SimSun;
+}
+#main-box
+{
+    width:440px;
+    text-align:center;
+    padding:10px;
+    background-color:#CCCC00;
+    border:1px solid yellow;
+    border-radius:10px 10px;
+    box-shadow:#CCCCCC 9px 5px 5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#buttons
+{
+    width:265px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+}
+button
+{
+    border:3px solid #CCCC00;
+    background-color:black;
+    color:#CCCC00;
+    margin-left:20px;
+    padding:5px;
+}
+    button:hover
+    {
+        border:3px solid black;
+        background-color:#CCCC00;
+        color:black;
+    }
+
+#debug
+{
+    position:relative;
+    background-color:white;
+    display:none;
+}
+.dialog
+{
+    width:550px;
+    height:300px;
+    background-color:white;
+
+    display:none;
+}

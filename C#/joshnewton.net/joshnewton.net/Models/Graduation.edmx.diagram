@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0bc4ad7c9b374db59eaa62bdae84b593" Name="Diagram1">
+        <EntityTypeShape EntityType="GraduationModel.Attendee" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GraduationModel.RSVP" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="GraduationModel.FK_RSVP_Attendee" ManuallyRouted="true" >
+          <ConnectorPoint PointX="2.25" PointY="1.75" />
+          <ConnectorPoint PointX="2.4975" PointY="1.8333333333333333" />
+          <ConnectorPoint PointX="3" PointY="1.8333333333333333" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

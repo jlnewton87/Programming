@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GraduationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="GraduationModelStoreContainer">
+          <EntitySet Name="Attendee" EntityType="GraduationModel.Store.Attendee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RSVP" EntityType="GraduationModel.Store.RSVP" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_RSVP_Attendee" Association="GraduationModel.Store.FK_RSVP_Attendee">
+            <End Role="Attendee" EntitySet="Attendee" />
+            <End Role="RSVP" EntitySet="RSVP" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Attendee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="UID" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="RSVP">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AttendeeId" Type="int" Nullable="false" />
+          <Property Name="NumInParty" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar(max)" />
+          <Property Name="dtCreate" Type="smalldatetime" Nullable="false" StoreGeneratedPattern="Computed" />
+          <Property Name="willCome" Type="bit" />
+        </EntityType>
+        <Association Name="FK_RSVP_Attendee">
+          <End Role="Attendee" Type="GraduationModel.Store.Attendee" Multiplicity="1" />
+          <End Role="RSVP" Type="GraduationModel.Store.RSVP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Attendee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RSVP">
+              <PropertyRef Name="AttendeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GraduationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="GraduationEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Attendees" EntityType="GraduationModel.Attendee" />
+          <EntitySet Name="RSVPs" EntityType="GraduationModel.RSVP" />
+          <AssociationSet Name="FK_RSVP_Attendee" Association="GraduationModel.FK_RSVP_Attendee">
+            <End Role="Attendee" EntitySet="Attendees" />
+            <End Role="RSVP" EntitySet="RSVPs" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Attendee">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="UID" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="RSVPs" Relationship="GraduationModel.FK_RSVP_Attendee" FromRole="Attendee" ToRole="RSVP" />
+        </EntityType>
+        <EntityType Name="RSVP">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AttendeeId" Type="Int32" Nullable="false" />
+          <Property Name="NumInParty" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="dtCreate" Type="DateTime" Nullable="false" Precision="0" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Attendee" Relationship="GraduationModel.FK_RSVP_Attendee" FromRole="RSVP" ToRole="Attendee" />
+          <Property Type="Boolean" Name="willCome" />
+        </EntityType>
+        <Association Name="FK_RSVP_Attendee">
+          <End Role="Attendee" Type="GraduationModel.Attendee" Multiplicity="1" />
+          <End Role="RSVP" Type="GraduationModel.RSVP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Attendee">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RSVP">
+              <PropertyRef Name="AttendeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GraduationModelStoreContainer" CdmEntityContainer="GraduationEntities">
+          <EntitySetMapping Name="Attendees">
+            <EntityTypeMapping TypeName="GraduationModel.Attendee">
+              <MappingFragment StoreEntitySet="Attendee">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UID" ColumnName="UID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RSVPs">
+            <EntityTypeMapping TypeName="GraduationModel.RSVP">
+              <MappingFragment StoreEntitySet="RSVP">
+                <ScalarProperty Name="willCome" ColumnName="willCome" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AttendeeId" ColumnName="AttendeeId" />
+                <ScalarProperty Name="NumInParty" ColumnName="NumInParty" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="dtCreate" ColumnName="dtCreate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

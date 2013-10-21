@@ -1,0 +1,54 @@
+﻿@model joshnewton.net.Models.Attendee
+@{
+    ViewBag.Title = "I'm Graduating!";
+    Layout = "~/Views/Shared/_GradAnnouncement.cshtml";
+}
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="~/Content/scripts/Grad_Rsvp.js"></script>
+<link href="~/Content/themes/KSU-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<div id="main-box">
+    <img src="~/Content/images/KSULogo.png" /><hr />
+    <p>With great pride, I</p>
+    <img src="~/Content/images/Name.png" 
+        title="Joshua Hage Newton" 
+        alt="Joshua Hage Newton" />
+    <p>proudly announce
+    my graduation from</p>
+    <img src="~/Content/images/KSU.png" 
+        title="Kennesaw State University" 
+        alt="Kennesaw State University" />
+    <p>Please help celebrate my achievement</p>
+    <p>by joining us for the after party!</p>
+    <p>Dec 13, 2013</p>
+    <p>2 O'Clock PM</p>
+    <p><a target="_blank" href="http://www.bing.com/maps/default.aspx?q=573%20Main%20Street%20%2F%20Atlanta%2C%20Georgia%2030324#Y3A9MzMuODIyMjM1fi04NC4zNjkxNTYmbHZsPTQmc3R5PXImcT01NzMlMjUyME1haW4lMjUyMFN0cmVldCUyNTIwJTI1MkYlMjUyMEF0bGFudGElMjUyQyUyNTIwR2VvcmdpYSUyNTIwMzAzMjQ=">Taco Mac @@ Lindergh</a></p>
+</div>
+<div id="buttons">
+    <button id="coming">I'll be there</button><button id="notComing">Sorry, can't make it</button>
+</div>
+
+
+<input type="hidden" id="attendeeId" value="@Model.Id" />
+<input type="hidden" id="postURL" value="@Url.Action("SubmitRsvp", "Graduation")" />
+<input type="hidden" id="redirectUrl" value="@Url.Action("Thanks", "Graduation")" />
+<div id="yay" class="dialog">
+    <div class="partyNumber">
+        <label for="numInParty">Number in your party</label>
+        <input type="number" id="numInParty" /><br />
+    </div>
+    <div class="inputs">
+        <label for="messageToGradComing">Message</label>
+        <textarea id="messageToGradComing" rows="15" cols="50"></textarea>
+    </div>
+</div>
+<div id="nay" class="dialog">
+    <label for="messageToGradNotComing">How about a word of congratulations for the graduate?</label>
+    <textarea id="messageToGradNotComing" rows="15" cols="50"></textarea>
+</div>
+<div id="debug">
+    <p>@Html.DisplayFor(model => model.Id)</p>
+    <p>@Html.DisplayFor(model => model.Name)</p>
+    <p>@Html.DisplayFor(model => model.Email)</p>
+    <p>@Html.DisplayFor(model => model.UID)</p>
+</div>
