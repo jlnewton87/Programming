@@ -1,0 +1,25 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:ListGadget.ViewModels"
+    xmlns:m="clr-namespace:ListGadget.Data;assembly=ListGadget.Data">
+
+    <vm:MainViewModel.Items>
+        <vm:ItemViewModel Description="Milk" Quantity="1" Status="Pending">
+            <vm:ItemViewModel.Category>
+                <m:Category Title="Dairy" DisplayOrder="1" />
+            </vm:ItemViewModel.Category>
+        </vm:ItemViewModel>
+        <vm:ItemViewModel Description="Soda" Quantity="2" Status="Pending">
+            <vm:ItemViewModel.Category>
+                <m:Category Title="Beverages" DisplayOrder="2" />
+            </vm:ItemViewModel.Category>
+        </vm:ItemViewModel>
+        <vm:ItemViewModel Description="Ginger Ale" Quantity="1" Status="Complete">
+            <vm:ItemViewModel.Category>
+                <m:Category Title="Beverages" DisplayOrder="2" />
+            </vm:ItemViewModel.Category>
+        </vm:ItemViewModel>
+    </vm:MainViewModel.Items>
+
+</vm:MainViewModel>

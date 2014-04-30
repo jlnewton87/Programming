@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.container
+		h1 #{title}
+		div.navbar.navbar-default
+			div.navbar-inner
+				div.container
+					div.nav
+						li.active
+							a(href="#") Home
+						li
+							a(href="#") About
+						li
+							a(href="#") Project
+	script(src='http://code.jquery.com/jquery-1.10.1.min.js')
+	script(src='/js/bootstrap.js')
